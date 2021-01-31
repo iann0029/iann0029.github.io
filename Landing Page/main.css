@@ -19,6 +19,10 @@ h2{
     font-size: 36pt;
     font-weight: 800;
 }
+h3{
+    font-size: 17pt;
+    padding: 1em;
+}
 p{
     font-size: 23pt;
 }
@@ -39,4 +43,32 @@ p{
     margin: 1em;
     border: 1px solid #f7f7f7;
     border-radius: 10px;
+}
+.apply input [type=checkbox]{
+    width: 23px;
+    font-size: 14pt;
+}
+.button{
+    background-color: #57eeab;
+    border: 1px solid #57eeab;
+    border-radius: 10px;
+    padding: 12px 20px;
+    width: 250px;
+    height: 53px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16pt;
+    font-weight: 700;
+}
+p.appication {
+    font-size: 14pt;
+}
+
+.site-footer{
+    background-color: #fffd8c;
+    text-align: center;
+    
+}
+.site-footer p{
+    font-size: 17pt;
+    padding: 1em;
 }
