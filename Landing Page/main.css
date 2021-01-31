@@ -1,3 +1,5 @@
+
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -14,6 +16,7 @@ body{
 h1{
     font-weight: 800;
     font-size: 57pt;
+    margin: 1em 0 1em 0 ;
 }
 h2{
     font-size: 36pt;
@@ -25,6 +28,11 @@ h3{
 }
 p{
     font-size: 23pt;
+    margin: 0;
+}
+img.logo{
+    width: 115px;
+    height: auto;
 }
 
 .apply{
