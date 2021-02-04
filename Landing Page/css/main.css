@@ -1,7 +1,5 @@
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1em;
+   padding: 1em;
 }
 html{
     font-family: 'Montserrat', sans-serif;
@@ -34,8 +32,6 @@ img.logo{
     width: 115px;
     height: auto;
 }
-
-
 
 /* form */
 .apply{
@@ -88,8 +84,8 @@ a {
 }
 footer{
     background-color: #fffd8c;
-    padding: 1em 2em;
-    margin: 0 -1em;
+    /* padding: 1em 2em;
+    margin: 0 -1em; */
 }
 .form-HC input[type=text]{
     background-color: #f7f7f7;
@@ -120,21 +116,51 @@ button.bt-calculate{
 }
 
 @media screen and (min-width: 1050px){
+    /* section img{
+        display: none;
+    }
+   
     section{
-        display: grid;
+        background-image: url(../images/bg-image/scooter.svg);
+        background-position: center 35%;
+        background-size: 50%;
+        background-repeat: no-repeat; */
+        /* display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, auto);
         grid-template-areas: 
         "header form"
         ;
-        gap: 2em;
+        gap: 5em;
     }
     .writing{
         grid-area: header;
     }
     .apply-form{
         grid-area: form;
+    } */
+    /* div.apply{
+        display: grid;
+        width: 524px;
+        height: auto;
     }
+    .writing{
+        display: grid;
+    }
+    .img-driving{
+        display: grid;
+    } */
+    section{
+        background-image: url(../images/bg-image/scooter.svg);
+        background-position: center 35%;
+        background-size: 50%;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 5em;
+        align-self: center;
+    }
+
 }
 
 
