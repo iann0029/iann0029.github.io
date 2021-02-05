@@ -24,7 +24,7 @@ h3{
     
 }
 p{
-    font-size: 26px;
+    font-size: 18px;
     margin: 0;
     
 }
@@ -92,44 +92,26 @@ a {
     color: #ff8480;
     text-decoration: none;
 }
+
+
+
+
 footer{
     background-color: #fffd8c;
     padding: 1em 2em;
     margin: 0 -8px;
-    /* display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: 
-    "header header header "
-    "write write write"
-    "hours city city"
-    "button button button"
-    "icons icons icons"
-    ; */
 }
-/* h3{
-    grid-area: header;
-}
-footer p{
-    grid-area: write;
-}
-.hours{
-    grid-area: hours;
-}
-.city{
-    grid-area: city;
-}
-.bt-calculate{
-    grid-area: button;
-}
-.icons-soical{
-    grid-area: icons ;
-} */
-
 .form-calculate input[type=text]{
     background-color: #f7f7f7;
     border: none;
     border-radius: 10px;
+    height: 40px;
+}
+.hours{
+    width: 68px;
+}
+.city{
+    width: 216px;
 }
 
 button.bt-calculate{
@@ -137,19 +119,24 @@ button.bt-calculate{
     border: 1px solid #ff8480;
     border-radius: 10px;
     margin: 5px 0 5px 0;
+    width: 300px;
     height: 40px;
     color: white;
     font-size: 25pt;
     font-weight: 700;
 }
 .icons-soical{
-    padding: 1em ;
-}
-.icons-soical img{
-    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 @media screen and (min-width: 768px){
-   
+   footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; 
+   }
 
 }
 
@@ -163,11 +150,16 @@ button.bt-calculate{
     }
     footer{
         padding-bottom: 6em;
+        display: flex;
+        align-items: flex-start;
     }
     /* Making the icons to float right. */
     .icons-soical{
         float: right;
-
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 }
 
