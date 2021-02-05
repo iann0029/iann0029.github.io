@@ -12,7 +12,7 @@ body{
 h1{
     font-weight: 600;
     font-size: 4.5rem;
-    margin: 5px 0 5px 0 ;
+    margin: 5px 0 10px 0 ;
 }
 h2{
     font-size: 40px;
@@ -34,13 +34,13 @@ img.logo{
 }
 section{
     background-image: url(../images/bg-image/scooter.svg);
-    background-position: center 35%;
-    /* background-size: 50%; */
+    background-position: center ;
+    background-size: 100%;
     background-repeat: no-repeat;
     display: grid;
     grid-auto-flow: row;
     gap: 5em;
-    padding: 3em 0 3em 0;
+    padding: 3em 0 4em 0;
     
 }
 
@@ -94,9 +94,38 @@ a {
 }
 footer{
     background-color: #fffd8c;
-    padding: 0 2em;
+    padding: 1em 2em;
     margin: 0 -8px;
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "header header header "
+    "write write write"
+    "hours city city"
+    "button button button"
+    "icons icons icons"
+    ; */
 }
+/* h3{
+    grid-area: header;
+}
+footer p{
+    grid-area: write;
+}
+.hours{
+    grid-area: hours;
+}
+.city{
+    grid-area: city;
+}
+.bt-calculate{
+    grid-area: button;
+}
+.icons-soical{
+    grid-area: icons ;
+} */
+
 .form-calculate input[type=text]{
     background-color: #f7f7f7;
     border: none;
@@ -126,9 +155,11 @@ button.bt-calculate{
 
 @media screen and (min-width: 1050px){
     section{
+        background-position: center 35%;
+        background-size: 50%;
         display: grid;
         grid-auto-flow: column;
-        gap: 5em;
+        gap: 40em;
     }
     footer{
         padding-bottom: 6em;
