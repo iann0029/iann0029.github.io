@@ -32,6 +32,17 @@ img.logo{
     width: 115px;
     height: auto;
 }
+section{
+    background-image: url(../images/bg-image/scooter.svg);
+    background-position: center 35%;
+    /* background-size: 50%; */
+    background-repeat: no-repeat;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 5em;
+    padding: 3em 0 3em 0;
+    
+}
 
 /* form */
 .apply{
@@ -40,7 +51,6 @@ img.logo{
     border-radius: 20px;
     padding: 13px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-    width: 100%
 }
 .apply p{
     font-size: 16pt;
@@ -84,10 +94,10 @@ a {
 }
 footer{
     background-color: #fffd8c;
-    /* padding: 1em 2em;
-    margin: 0 -1em; */
+    padding: 0 2em;
+    margin: 0 -8px;
 }
-.form-HC input[type=text]{
+.form-calculate input[type=text]{
     background-color: #f7f7f7;
     border: none;
     border-radius: 10px;
@@ -98,7 +108,6 @@ button.bt-calculate{
     border: 1px solid #ff8480;
     border-radius: 10px;
     margin: 5px 0 5px 0;
-    width: 100%;
     height: 40px;
     color: white;
     font-size: 25pt;
@@ -116,51 +125,19 @@ button.bt-calculate{
 }
 
 @media screen and (min-width: 1050px){
-    /* section img{
-        display: none;
-    }
-   
     section{
-        background-image: url(../images/bg-image/scooter.svg);
-        background-position: center 35%;
-        background-size: 50%;
-        background-repeat: no-repeat; */
-        /* display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, auto);
-        grid-template-areas: 
-        "header form"
-        ;
-        gap: 5em;
-    }
-    .writing{
-        grid-area: header;
-    }
-    .apply-form{
-        grid-area: form;
-    } */
-    /* div.apply{
-        display: grid;
-        width: 524px;
-        height: auto;
-    }
-    .writing{
-        display: grid;
-    }
-    .img-driving{
-        display: grid;
-    } */
-    section{
-        background-image: url(../images/bg-image/scooter.svg);
-        background-position: center 35%;
-        background-size: 50%;
-        background-repeat: no-repeat;
         display: grid;
         grid-auto-flow: column;
         gap: 5em;
-        align-self: center;
     }
+    footer{
+        padding-bottom: 6em;
+    }
+    /* Making the icons to float right. */
+    .icons-soical{
+        float: right;
 
+    }
 }
 
 
