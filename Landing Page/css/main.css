@@ -108,12 +108,12 @@ footer{
     padding: 1em;
     margin: 0 5px 0 5px;
 }
-/* .hours{
-    width: 68px;
+.hours{
+    width: 10%;
 }
 .city{
-    width: 216px;
-} */
+    width: 65%;
+}
 
 button.bt-calculate{
     background-color: #ff8480;
@@ -132,15 +132,22 @@ button.bt-calculate{
     justify-content: space-between;
 }
 @media screen and (min-width: 768px){
+    .apply{
+        width: 536px;
+    }
     button.bt-calculate{
         width: 300px;
-        height: 40px;
     }
-    footer{
-        /* display: flex;
-        flex-direction: column;
+    .hours{
+        width: 126px;
+    }
+    .city{
+        width: 260px;
+    }
+    .icons-soical{
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: space-between;  */
    }
 
 }
@@ -151,7 +158,7 @@ button.bt-calculate{
         background-size: 50%;
         display: grid;
         grid-auto-flow: column;
-        gap: 30em;
+        gap: 40em;
     }
     footer{
         padding-bottom: 6em;
@@ -161,7 +168,6 @@ button.bt-calculate{
     /* Making the icons to float right. */
     .icons-soical{
       float: right;
-      padding: -em;
     }
 }
 
