@@ -45,6 +45,7 @@ section{
     
 }
 
+
 /* form */
 .apply{
     background-color: white;
@@ -65,12 +66,14 @@ input[type=phone]{
     border: 1px solid #f4f4f5;
     border-radius: 10px;
     padding: 1em;
+    box-sizing: border-box;
+    width: calc(100% - 2em);
 }
 input.terms-checkbox{
     width: 25px;
     height: 25px;
 }
-label{
+.checkbox{
     /* padding: 1em; */
     margin: 1em 1em 1em 1em;
     font-size: 16px;
