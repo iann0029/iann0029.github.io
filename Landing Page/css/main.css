@@ -32,10 +32,11 @@ img.logo{
     width: 115px;
     height: auto;
 }
+/* Making the scooter image go in the background and fixing the position, size, and make it not repeat. Also using CSS Grid auto to put a grid on the section.   */
 section{
     background-image: url(../images/bg-image/scooter.svg);
     background-position: center 35%;
-    background-size: 50%;
+    background-size: 100%;
     background-repeat: no-repeat;
     display: grid;
     grid-auto-flow: row;
@@ -148,6 +149,7 @@ button.bt-calculate{
     }
     .apply{
         width: 536px;
+        
     }
     .button{
         font-size: 32px;
