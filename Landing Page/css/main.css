@@ -35,12 +35,12 @@ img.logo{
 /* Making the scooter image go in the background and fixing the position, size, and make it not repeat. Also using CSS Grid auto to put a grid on the section.   */
 section{
     background-image: url(../images/bg-image/scooter.svg);
-    background-position: center 35%;
+    background-position: center 41%;
     background-size: 100%;
     background-repeat: no-repeat;
     display: grid;
     grid-auto-flow: row;
-    gap: 5em;
+    gap: 20em;
     padding: 3em 0 4em 0;
     
 }
@@ -73,21 +73,23 @@ input.terms-checkbox{
     width: 25px;
     height: 25px;
 }
-.checkbox{
-    /* padding: 1em; */
+/* .checkbox{
     margin: 1em 1em 1em 1em;
     font-size: 16px;
     width: 25px;
     height: 25px;
-}
-label #text{
-   position: relative;
-   bottom: 20px;
+} */
+.checkbox{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin: 10px;
 }
 .button{
     background-color: #57eeab;
     border: 1px solid #57eeab;
     border-radius: 10px;
+    box-sizing: border-box;
     padding: 12px 20px;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -150,6 +152,13 @@ button.bt-calculate{
     h1{
         font-size: 80px;
     }
+    section{
+        /* background-position: center 35%;
+        background-size: 50%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .apply{
         width: 536px;
         
@@ -182,9 +191,11 @@ button.bt-calculate{
     section{
         background-position: center 35%;
         background-size: 50%;
+        align-items: flex-start;
         display: grid;
         grid-auto-flow: column;
         gap: 35em;
+        
     }
     footer{
         padding-bottom: 6em;
