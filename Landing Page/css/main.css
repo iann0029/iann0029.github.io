@@ -1,38 +1,46 @@
+/* Using padding on the sides to make the context not be on the edge of the page. */
 .container{
    padding: 0 1em 0 1em;
 }
+/* Using html to have no margin and padding as well as having the same font thoughtout the page. */
 html{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
+/* Using body to change the background colour of the website. */
 body{
     background-color: #f7f7f7;
 }
+/* Fixing the font size and font weight in heading 1. Using the margin to adjust the sides. */
 h1{
     font-weight: 700;
     font-size: 60px;
     margin: 5px 0 10px 0 ;
 }
+/* Fixing the font size, font weight, and margin in heading 2. */
 h2{
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
     margin: 10px;
 }
+/* Fixing the font size of heading 3. */
 h3{
     font-size: 18px;
     
 }
+/* Setting the font size of the writing with the tag of p and having a margin of zero.  */
 p{
     font-size: 24px;
     margin: 0;
     
 }
+/* Making the image of the logo size bigge r.*/
 img.logo{
     width: 115px;
     height: auto;
 }
-/* Making the scooter image go in the background and fixing the position, size, and make it not repeat. Also using CSS Grid auto to put a grid on the section.   */
+/* Making the scooter image go in the background and fixing the position (making it center and more up), size, and make it not repeat. Also using CSS Grid to make the section of header 1 and form to be in a row and having a gap to see the background image and to have space between them. The padding is used on have space at the top and bottom of the grid.   */
 section{
     background-image: url(../images/bg-image/scooter.svg);
     background-position: center 41%;
@@ -46,7 +54,7 @@ section{
 }
 
 
-/* form */
+/* .apply is the form to apply. Designing the form by adding a background colour, border, padding, having a shadow around it, and rounding the edges (border-radius). */
 .apply{
     background-color: white;
     border: 1px solid white;
@@ -54,13 +62,14 @@ section{
     padding: 1em;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
 }
+/* Fixing the margin of the writing right under the heading in the form and have no padding on it. */
 .apply p{
     margin: 10px;
     padding: 0;
 }
+/* .apply input[type=text] input[type=phone] is the inputs on the form. Using this code to design the inputs. Using calc in width is used to calculate the width of it so when it goes to tablet and desktop to stay the same.  */
 .apply input[type=text],
-input[type=phone]{
-    width: 100%;
+input[type=tel]{
     margin: 1em;
     background-color: #f4f4f5;
     border: 1px solid #f4f4f5;
@@ -69,22 +78,19 @@ input[type=phone]{
     box-sizing: border-box;
     width: calc(100% - 2em);
 }
+/* input.terms-checkbox is the checkbox (the box not the writing). Using width and height to make the size of the box bigger. */
 input.terms-checkbox{
     width: 25px;
     height: 25px;
 }
-/* .checkbox{
-    margin: 1em 1em 1em 1em;
-    font-size: 16px;
-    width: 25px;
-    height: 25px;
-} */
+/* .checkbox is the whole checkbox. Using CSS Flexbox to make the checkbox writing center to the box. Also, fixing the font size of the writing and adding a margin to the whole checkbox.  */
 .checkbox{
     display: flex;
     align-items: center;
     font-size: 16px;
     margin: 10px;
 }
+/* .button is the button in the form. The code in it to designing the button, adding padding, fixing the width, adding the font, and fixing the font size and weight,  */
 .button{
     background-color: #57eeab;
     border: 1px solid #57eeab;
@@ -96,28 +102,32 @@ input.terms-checkbox{
     font-size: 24px;
     font-weight: 700;
 }
+/*p.appication is the writing at the end in the form. Fixed the font size of it and adding a padding around it.   */
 p.appication {
-    font-size: 14pt;
+    font-size: 16px;
     padding: 1em;
 }
-/* Using the a to color the link of the status to red/pink and removing the underliner. */
+/* Using the code a to color the link of the status to red/pink and removing the underliner.*/
 a {
     color: #ff8480;
     text-decoration: none;
     font-size: 17px;
 }
+/* Designing the footer by changing the background colour to the yellow. Using padding and margin to make the footer stretch to the end of the page. */
 footer{
     background-color: #fffd8c;
     padding: 1em 2em;
     margin: 0 -8px;
 }
-
+/* Fixing the size of the writing in the footer.  */
 footer p{
     font-size: 16px;
 }
+/* Adding the margin in the whole button and input so on that it has space between the top and the bottom of the other context.  */
 .form-calculate{
     margin: 5px 0 5px 0;
 }
+/* Designing the 2 inputs in the footer by adding a background colour, no border,rounding the edges (border-radius), and a padding. The margin is to add space between each other.  */
 .form-calculate input[type=text]{
     background-color: #f7f7f7;
     border: none;
@@ -125,13 +135,15 @@ footer p{
     padding: 1em;
     margin: 0 5px 0 5px;
 }
+/* Fixing the width on the hour input */
 .hours{
     width: 10%;
 }
+/* Fixing the width on the city input */
 .city{
     width: 65%;
 }
-
+/* Design the calculate button in the footer by adding a background colour, border,rounding the edges (border-radius), width, and a padding. Using color to change the font colour. Also, fixed the font size and weight. */
 button.bt-calculate{
     background-color: #ff8480;
     border: 1px solid #ff8480;
@@ -143,38 +155,49 @@ button.bt-calculate{
     font-size: 1em;
     font-weight: 700;
 }
+/* Adding a CSS Flexbox on the icon images to be space out between each other. */
 .icons-soical{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+/* Using CSS Media Queries for designing the tablet version. */
 @media screen and (min-width: 768px){
+    /* Fixing the font size on header 1. */
     h1{
         font-size: 80px;
     }
+    /* Adding CSS Flexbox to the section to make it center (mostly for the form). Making the background image size to 50% of it's original size and positiioning it up more but keeping it center. */
     section{
-        /* background-position: center 35%;
-        background-size: 50%; */
+        background-position: center 35%;
+        background-size: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    /* Fixing the width of the form. */
     .apply{
         width: 536px;
-        
+        position: relative;
+        top: 1em;
     }
+    /* Fixing the font size of the button in the form. */
     .button{
         font-size: 32px;
     }
+    /* Fixing the width of the calculate button in the footer. */
     button.bt-calculate{
         width: 200px;
     }
+    /* Fixing the width of the hours input in footer. */
     .hours{
         width: 122px;
     }
+    /* Fixing the width of the city input in the footer */
     .city{
         width: 260px;
     }
+    /* Using CSS Flexbox to make the icons space out evenly and in the center. */
     .icons-soical{
         display: flex;
         flex-direction: row;
@@ -183,11 +206,13 @@ button.bt-calculate{
    }
 
 }
-
+/* Using CSS Media Queries for designing the desktop version. */
 @media screen and (min-width: 1050px){
+    /* Using padding on the sides to make the context more off of the edge of the page. */
     .container{
         padding: 0 3em 0 3em;
-     }
+    }
+     /* Fixing the background image to be center up a bit and sizing of it. Also, adding a CSS Grid to make it go to a coluumn using auto flow and adding a gap so that you can see the background image and for header 1/writing to be space out with the form.  */
     section{
         background-position: center 35%;
         background-size: 50%;
@@ -197,17 +222,15 @@ button.bt-calculate{
         gap: 35em;
         
     }
-    footer{
-        padding-bottom: 6em;
-    }
-    /* Making the icons to float right. */
+    
+    /* Using the CSS Flexbox to make the icons go to the right side of the page. Also, positioning it to make it center. */
     .icons-soical{
       display: flex;
-      align-items: center;
       justify-content: flex-end;
       position: relative;
       bottom: 6em;
     }
+    /* Fixing the order of each icons with CSS Flexbox that is apply to it. Also, adding a padding on them to be space out. */
     .fb{
         order: 4;
         padding: 1em;
