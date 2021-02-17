@@ -1,0 +1,22 @@
+html{
+    font-size: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+:root{
+    --brown: #3D2B23;
+    --lightbrown: #8A5A44;
+    --red: #621708;
+    --white: white;
+    --balck: black;
+    --green: #283618;
+    --yellow: #D9AB2B;
+}
+body{
+    background-color: var(--lightbrown);
+}
