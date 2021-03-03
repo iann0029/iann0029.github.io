@@ -79,4 +79,56 @@ h1{
     padding: 1em;
     margin: 1em;
 }
+.events, .catering{
+    padding: 1em;
+    background-color: var(--brown);
+}
+h2, h3{
+    text-align: center;
+    background-color: var(--red);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 1em;
+    margin: 1em;
+}
+.catering p{
+    font-size: 12px;
+    color: var(--white);
+    padding-bottom:10px ;
+}
+.contact-catering{
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 4px;
+    color: var(--white);
+    padding: 1em;
+    margin: 1em;
+}
+.site-footer{
+    background-color: var(--black);
+}
+.site-footer img{
+    width: 124px;
+}
+h4, p {
+    color: var(--white);
+    font-size: 16px;
+}
+.soical-icons{
+    color: var(--white);
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.copy{
+    color: var(--white);
+}
+
+
+
+
+
 
