@@ -3,8 +3,11 @@ html{
     font-family: 'Libre Franklin', sans-serif;
     
 }
-*{
-    box-sizing: border-box;
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    line-height: inherit;
     margin: 0;
     padding: 0;
 }
@@ -25,6 +28,7 @@ body{
     background-color: var(--lightbrown);
     
 }
+
 /* Resizing the logo so that it is not so big on the website */
 .logo{
     width: 89px;
@@ -32,7 +36,7 @@ body{
     
 }
 .site-header{
-    background-color: var(--black); opacity: 0.8;
+    background-color: var(--black);
     
 }
 /* Adding CSS Flexbox to the navigation to make it go into columns. Remove the bullet points and added a padding for space between the top and the bottom. */
@@ -57,6 +61,7 @@ body{
 .banner{
     text-align: center;
     background-image: url(/iann0029.github.io/Midterm/images/Ribscopy.jpg);
+    
 }
 h1{
     -webkit-text-stroke: 1px var(--black);
@@ -69,6 +74,13 @@ h1{
     color: var(--lightbrown);
     font-size: 13px;
     
+}
+.events img{
+    display: block;
+    width: 311px;
+    height: 188px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .banner button{
     font-family: 'Libre Franklin', sans-serif;
@@ -114,19 +126,107 @@ h2, h3{
 }
 h4, p {
     color: var(--white);
-    font-size: 16px;
+    font-size: 10px;
+    font-weight: 400;
 }
+.hours-days, .hours-times, .contact-info{
+    list-style: none;
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 400;
+}
+
 .soical-icons{
     color: var(--white);
     padding: 1em;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
+}
+.im{
+    display: inline-block;
+    vertical-align: middle;
 }
 .copy{
     color: var(--white);
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 1em;
 }
-test
+.hours-grid{
+    display: grid;
+    grid-template-areas:
+    "hours days number" 
+    ;  
+}
+.hours{
+    grid-area: hours;
+    
+}
+
+.hours-days{
+    grid-area: days;
+}
+.hours-times{
+    grid-area: number;
+}
+.contact-grid{
+    display: grid;
+    grid-template-areas: 
+    "contact phone .";
+}
+.contact{
+    grid-area: contact;
+}
+.contact-info{
+    grid-area: phone;
+}
+
+@media screen and (min-width: 765px){
+    .nav-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    img.logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .events img{
+        display: block;
+        width: 588px;
+        height: 435px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .events img{
+        display: block;
+        width: 845px;
+        height: 531px;
+    }
+    /* .poster{
+        float: left;
+    }
+    .NYHposter{
+        float: right;
+    } */
+    .catering img{
+        width: 552px;
+        height: 714px;
+    }
+    .catering p{
+        float: right;
+        font-size: 40px;
+    }
+}
+
 
 
 
