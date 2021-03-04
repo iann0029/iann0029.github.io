@@ -1,0 +1,219 @@
+html{
+    font-size: 100%;
+    font-family: 'Libre Franklin', sans-serif;
+    
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+:root{
+    --brown: #3D2B23;
+    --lightbrown: #905442;
+    --red: #621708;
+    --white: white;
+    --black: black;
+    --green: #283618;
+    --yellow: #D9AB2B;
+}
+body{
+    background-color: var(--lightbrown);
+    
+}
+/* Logo */
+.logo{
+    width: 89px;
+    height: 70px;
+    display: flex;
+}
+.site-header{
+    background-color: var(--black);
+}
+/* navigation */
+.list-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    
+}
+.list-nav li{
+    padding: 10px;
+    
+}
+.list-nav li a{
+    text-decoration: none;
+    color: var(--lightbrown);
+    
+}
+.list-nav li a:hover{
+    color: var(--red);
+    transition: all 0.5s ease-in ;
+}
+
+/* Banner */
+.banner{
+    background-image: url(../images/Ribscopy.jpg);
+    background-size: 100%;
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--lightbrown);
+    -webkit-text-stroke: 1px var(--black);
+}
+.banner p{
+    text-align: center;
+    font-size: 15px;
+    color: var(--lightbrown);
+    -webkit-text-stroke: 0.5px var(--black);
+}
+/* Button */
+.banner button, .contact-catering-btn{
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 4px;
+    color: var(--white);
+    padding: 1em;
+    margin: 2em;
+}
+/* Events */
+h2, h3{
+    text-align: center;
+    background-color: var(--red);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 1em;
+    margin: 1em;
+}
+.events img{
+    display: block;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 311px;
+    height: 188px;
+}
+
+/* Catering */
+.catering img{
+    width: 237px;
+    height: 306px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 1em; 
+}
+.catering p{
+    color: var(--white);
+    font-size: 12px;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 765px){
+    h1{
+        font-size: 67px;
+        -webkit-text-stroke: 3px var(--black);
+    }
+    .banner p{
+        font-size: 28px;
+        -webkit-text-stroke: 1px var(--black);
+    }
+    .catering p{
+        font-size: 24px;
+        
+    }
+    
+    /* navigation */
+    .list-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .logo{
+        width: 131px;
+        height: 103px;
+    }
+    /* Events */
+    .events img{
+        width: 588px;
+        height: 435px;
+    }
+    /* Catering */
+    .catering img{
+        width: 465px;
+        height: 601px;
+    }
+}
+
+@media screen and (min-width: 1500px){
+    h1{
+        font-size: 132px;
+    }
+    h2, h3{
+        font-size: 40px ;
+    }
+    .site-header{
+        background-color: var(--red);
+    }
+    /* Banner */
+    .banner p{
+        font-size: 52px;
+    }
+    .logo{
+        width: 187px;
+        height: 147px;
+    }
+    /* Events */
+    .events img{
+        width: 845px;
+        height: 531px;
+        margin: 0;
+        /* margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto; */
+    }
+    .NYHposter{
+        position: relative;
+        bottom: 33em;
+        display: block;
+        float: right;
+    }
+    /* Catering */
+    .catering img{
+        width: 552px;
+        height: 714px;
+        margin: 0;
+        float: left;
+    }
+    .catering p{
+        font-size: 40px;
+        /* float: right; */
+        
+    }
+
+
+}
+    
+
+    
+
+
+
+
+
+
+
+
