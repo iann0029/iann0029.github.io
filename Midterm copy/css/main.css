@@ -1,19 +1,16 @@
 html{
     font-size: 100%;
     font-family: 'Libre Franklin', sans-serif;
-    
-}
-*,
-*::after,
-*::before{
-    box-sizing: inherit;
-    line-height: inherit;
+    padding: 0;
     margin: 0;
-    padding: 0; 
+}
+*{
+    box-sizing: inherit;
 }
 img{
     width: 100%;
     height: auto;
+    margin: 0;
 }
 :root{
     --brown: #3D2B23;
@@ -26,6 +23,8 @@ img{
 }
 body{
     background-color: var(--lightbrown);
+    margin: 0;
+    padding: 0;
     
 }
 /* Logo */
@@ -44,7 +43,7 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 1em;
-    
+    margin: 0;
 }
 .list-nav li{
     padding: 10px;
@@ -71,6 +70,7 @@ h1{
     font-weight: bold;
     color: var(--lightbrown);
     -webkit-text-stroke: 1px var(--black);
+    margin: 0;
 }
 .banner p{
     text-align: center;
@@ -79,7 +79,7 @@ h1{
     -webkit-text-stroke: 0.5px var(--black);
 }
 /* Button */
-.banner button, .contact-catering-btn{
+.banner button, .contact-catering-btn, .takeout-btn{
     background-color: var(--red);
     border: 1px solid var(--red);
     border-radius: 4px;
@@ -156,11 +156,17 @@ h2, h3{
     height: 106.23px;
     border: 3px solid var(--green);
     border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.takeout-icons img, p{
+.takeout-icons p{
     display: flex;
     justify-content: center;
+}
+.phoneicon{
+    width: 62.84px;
+    color: var(--white);
 }
 
 
@@ -203,6 +209,12 @@ h2, h3{
         width: 616px;
         height: 798.24px;
     }
+    /* Takeout Page */
+    .takeout-icons img{
+        margin-left: 1em;
+        margin-right: 0;
+    }
+
 }
 
 @media screen and (min-width: 1500px){
@@ -288,14 +300,3 @@ h2, h3{
 
 
 }
-    
-
-    
-
-
-
-
-
-
-
-
