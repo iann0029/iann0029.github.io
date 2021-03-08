@@ -98,21 +98,56 @@ h2, h3{
     margin: 1em;
 }
 .events img{
-    display: block;
-    margin: 0 auto;
     margin-bottom: 1em;
     width: 311px;
     height: 188px;
+    
+}
+.events{
+    display: grid;
+   justify-items: center;
+    grid-template-areas:
+    ". header ."
+    ". header ." 
+    ". poster1 ."
+    ". poster2 .";
+}
+h2{
+    grid-area: header;
+}
+.poster{
+    grid-area: poster1;
+}
+.NYHposter{
+    grid-area: poster2;
 }
 
+
 /* Catering */
+.catering{
+    display: grid;
+    justify-items: center;
+    grid-template-areas: 
+    "header"
+    "poster"
+    "writing1"
+    "writing2";
+}
+h3{
+    grid-area: header;
+}
 .catering img{
+    grid-area: poster;
     width: 237px;
     height: 306px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 1em; 
 }
+.write{
+    grid-area: writing1;
+}
+.catering-question{
+    grid-area: writing2;
+}
+
 .catering p{
     color: var(--white);
     font-size: 12px;
@@ -214,6 +249,7 @@ h2, h3{
     }
     /* Events */
     .events img{
+        margin-bottom: 1em;
         width: 588px;
         height: 435px;
     }
@@ -249,7 +285,7 @@ h2, h3{
         font-size: 40px ;
     }
     .site-header{
-        background-color: var(--black);
+        background-color: var(--yellow);
     }
     /* Banner */
     .banner p{
@@ -261,23 +297,58 @@ h2, h3{
     }
     /* Events */
     .events img{
-       
+        margin-bottom: 1em;
         width: 845px;
         height: 531px;
-        margin: 0;
+    }
+    .events{
+        display: grid;
+        justify-items: center;
+        grid-template-areas:
+        "header ." 
+        " poster1 poster2";
+    }
+    h2{
+        grid-area: header;
+    }
+    .poster{
+        grid-area: poster1;
     }
     .NYHposter{
-        float: right;
+        grid-area: poster2;
     }
+    
     /* Catering */
+    .catering{
+        display: grid;
+        justify-items: center;
+        grid-template-areas: 
+        ". header"
+        "poster writing1 "
+        "poster writing2"
+        " . button";
+    }
+    h3{
+        grid-area: header;
+    }
     .catering img{
         width: 552px;
         height: 714px;
-        margin: 0;
-        float: left;
+        grid-area: poster;
+    }
+    .write{
+        grid-area: writing1;
+        align-items: center;
+    }
+    .catering-question{
+        grid-area: writing2;
+    }
+    .contact-catering-btn{
+        grid-area: button;
     }
     .catering p{
         font-size: 40px;
+        margin: 0;
         /* float: right; */
         
     }
