@@ -99,9 +99,8 @@ h2, h3{
 }
 .events img{
     display: block;
+    margin: 0 auto;
     margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
     width: 311px;
     height: 188px;
 }
@@ -111,8 +110,7 @@ h2, h3{
     width: 237px;
     height: 306px;
     display: block;
-    margin-left: auto;
-    margin-right: auto; 
+    margin: 0 auto;
     margin-bottom: 1em; 
 }
 .catering p{
@@ -120,7 +118,30 @@ h2, h3{
     font-size: 12px;
     text-align: center;
 }
+/* Footer */
+.site-footer{
+    background-color: var(--black);
+    color: var(--white);
+}
+.site-footer img{
+    width: 124px;
+    height: 97px;
+    padding: 1em;
+    display: block;
+    margin: 0 auto;
+}
+.soical-icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.copy{
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
+}
 /* Menu Page */
+
 .banner-menu{
     background-image: url(../images/Ribs_1\ .jpg);
     background-size: 100%;
@@ -129,15 +150,15 @@ h2, h3{
 .menu img{
     margin: 1em 0 0 1em;
     border: 10px solid var(--brown);
+    
 }
-.menuphoto{
+.menuphoto img{
     width: 336px;
     height: 435.24px;
-    margin-left: auto;
-    margin-right: auto;
-
-  
+    display: block;
+    margin: 0 auto;
 }
+
 /* Takeoyt Page */
 .banner-takeout{
     background-image: url(../images/Pulled\ Pork\ Sandwich\ .jpg);
@@ -156,13 +177,10 @@ h2, h3{
     height: 106.23px;
     border: 3px solid var(--green);
     border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .takeout-icons p{
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 .phoneicon{
     width: 62.84px;
@@ -204,8 +222,10 @@ h2, h3{
         width: 465px;
         height: 601px;
     }
+    /* Footer */
+
     /* Menu Page */
-    .menuphoto{
+    .menuphoto img{
         width: 616px;
         height: 798.24px;
     }
@@ -214,6 +234,10 @@ h2, h3{
         margin-left: 1em;
         margin-right: 0;
     }
+    .takeout-icons p{
+        text-align: start;
+    }
+    
 
 }
 
@@ -225,7 +249,7 @@ h2, h3{
         font-size: 40px ;
     }
     .site-header{
-        background-color: var(--red);
+        background-color: var(--black);
     }
     /* Banner */
     .banner p{
@@ -237,17 +261,12 @@ h2, h3{
     }
     /* Events */
     .events img{
+       
         width: 845px;
         height: 531px;
         margin: 0;
-        margin-bottom: 1em;
-        margin-left: auto;
-        margin-right: auto;
     }
     .NYHposter{
-        position: relative;
-        bottom: 33em;
-        display: block;
         float: right;
     }
     /* Catering */
@@ -269,7 +288,7 @@ h2, h3{
         height: 921px;
         
     }
-    .menuphoto{
+    .menuphoto {
         margin: 0;
         display: grid;
         grid-template-areas: 
