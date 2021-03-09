@@ -18,7 +18,6 @@ img{
     --red: #621708;
     --white: white;
     --black: black;
-    --green: #283618;
     --yellow: #D9AB2B;
 }
 body{
@@ -180,7 +179,6 @@ h3{
 .banner-menu{
     background-image: url(../images/Ribs_1\ .jpg);
     background-size: 100%;
-    background-position: 50%;
 }
 .menu img{
     margin: 1em 0 0 1em;
@@ -206,6 +204,9 @@ h3{
     font-weight: 400;
     margin: 0.5em;
 }
+.takeout-icons{
+    text-align: center;
+}
 .takeout-icons img{
     background-color: #283618;
     width: 122px;
@@ -214,8 +215,11 @@ h3{
     border-radius: 15px;
 }
 
-.takeout-icons p{
-    text-align: center;
+.takeout-icons p, .takeout-icons a{
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--red);
 }
 .phoneicon{
     width: 62.84px;
@@ -270,9 +274,9 @@ h3{
         margin-left: 1em;
         margin-right: 0;
     }
-    .takeout-icons p{
+    /* .takeout-icons p{
         text-align: start;
-    }
+    } */
     
 
 }
@@ -302,6 +306,8 @@ h3{
         height: 531px;
     }
     .events{
+        background-color: var(--brown);
+        margin: 1em 0;
         display: grid;
         justify-items: center;
         grid-template-areas:
@@ -320,6 +326,8 @@ h3{
     
     /* Catering */
     .catering{
+        background-color: var(--brown);
+        margin: 1em 0;
         display: grid;
         justify-items: center;
         grid-template-areas: 
@@ -387,6 +395,48 @@ h3{
     .menu6{
         grid-area: p5;
     }
+    /* Takeout page */
+    
+    /* .takeout-icons{
+        display: grid;
+        grid-template-areas: 
+        "icon1 p1"
+        "icon2 p2"
+        "icon3 p3"
+        "icon4 p4"
+        "icon5 p5"
+        ;
+    }
+    .call{
+        grid-area: icon1;
+    }
+    .p1{
+        grid-area: p1;
+    }
+    .uber{
+        grid-area: icon2;
+    }
+    .p2{
+        grid-area: p2;
+    }
+    .skip{
+        grid-area: icon3;
+    }
+    .p3{
+        grid-area: p3;
+    }
+    .door{
+        grid-area: icon4;
+    }
+    .p4{
+        grid-area: p4;
+    }
+    .mgcom{
+        grid-area: icon5;
+    }
+    .p5{
+        grid-area: p5;
+    } */
 
 
 }
