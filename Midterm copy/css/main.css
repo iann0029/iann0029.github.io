@@ -226,6 +226,33 @@ h3{
     color: var(--white);
 }
 
+/* Contact page */
+.banner-contact{
+    background-image: url(../images/DSC09651-Edit\ -\ Edit.jpg);
+    background-position: 50%;
+}
+
+/* label{
+    font-weight: bold;
+    color: white;
+    background-color: var(--red);
+    padding: 1em;
+}
+input{
+    padding: 1em;
+}
+textarea{
+    padding: 2em;
+    margin: 1em;
+}
+label, input{
+    margin: 1em;
+} */
+.location iframe{
+    max-width: 100%;
+    padding: 1em 0;
+}
+
 
 @media screen and (min-width: 765px){
     h1{
