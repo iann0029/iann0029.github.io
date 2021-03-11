@@ -103,6 +103,8 @@ h2, h3{
     
 }
 .events{
+    background-color: var(--brown);
+    margin: 82px 0;
     display: grid;
    justify-items: center;
     grid-template-areas:
@@ -124,6 +126,8 @@ h2{
 
 /* Catering */
 .catering{
+    background-color: var(--brown);
+    margin-bottom: 114px;
     display: grid;
     justify-items: center;
     grid-template-areas: 
@@ -318,12 +322,18 @@ h4{
         height: 103px;
     }
     /* Events */
+    .events{
+        margin: 139px 0;
+    }
     .events img{
         margin-bottom: 1em;
         width: 588px;
         height: 435px;
     }
     /* Catering */
+    .catering{
+        margin-bottom: 114px;
+    }
     .catering img{
         width: 465px;
         height: 601px;
@@ -372,8 +382,7 @@ h4{
         height: 531px;
     }
     .events{
-        background-color: var(--brown);
-        margin: 1em 0;
+        margin: 212px 0;
         display: grid;
         justify-items: center;
         grid-template-areas:
@@ -392,8 +401,7 @@ h4{
     
     /* Catering */
     .catering{
-        background-color: var(--brown);
-        margin: 1em 0;
+        margin-bottom: 139px;
         display: grid;
         justify-items: center;
         grid-template-areas: 
