@@ -227,6 +227,11 @@ h3{
 }
 
 /* Contact page */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
 .banner-contact{
     background-image: url(../images/DSC09651-Edit\ -\ Edit.jpg);
     background-position: 50%;
@@ -237,20 +242,54 @@ h3{
     color: white;
     background-color: var(--red);
     padding: 1em;
-}
-input{
-    padding: 1em;
-}
-textarea{
-    padding: 2em;
-    margin: 1em;
-}
-label, input{
-    margin: 1em;
 } */
 .location iframe{
     max-width: 100%;
     padding: 1em 0;
+}
+.contact-info2{
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+}
+.contact-info2 p{
+    color: var(--red);
+    font-size: 18px;
+    padding-left: 1em;
+}
+.contact-info2 p, .contact-info2 img{
+    padding: 1em;
+}
+.contact-info2 img{
+    max-width: 26px;
+}
+.contact-hours{
+    background-color: var(--white);
+    padding-bottom: 1em;
+}
+h4{
+    text-align: center;
+    padding-top: 1em;
+    font-size: 30px;
+    margin: 21px;
+    color: var(--red);
+}
+
+.hour{
+    list-style: none;
+    font-size: 28px;
+    color: var(--red);
+    display: grid;
+    grid-template-areas: 
+    "day time";
+}
+.hours-days{
+    grid-area: day;
+}
+.hours-times{
+    grid-area: time;
 }
 
 
@@ -304,7 +343,7 @@ label, input{
     /* .takeout-icons p{
         text-align: start;
     } */
-    
+   
 
 }
 
@@ -464,6 +503,31 @@ label, input{
     .p5{
         grid-area: p5;
     } */
+     /* Contact */
+   /* p{
+       font-size: 57px;
+       color: var(--white);
+   }
+    .contact-info{
+        display: grid;
+        grid-template-areas: 
+        "write ."
+        "form map"
+        "info hour";
+    }
+    .form{
+        grid-area: form;
+    }
+    .location{
+        grid-area: map;
+    }
+    .contact-info2{
+        grid-area: info;
+    }
+    .contact-hours{
+        grid-area: hour;
+    } */
+    
 
 
 }
