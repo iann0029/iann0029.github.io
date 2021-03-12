@@ -6,6 +6,7 @@ html{
 }
 *{
     box-sizing: inherit;
+    margin: 0;
 }
 img{
     width: 100%;
@@ -78,13 +79,15 @@ h1{
     -webkit-text-stroke: 0.5px var(--black);
 }
 /* Button */
-.banner button, .contact-catering-btn, .takeout-btn{
+button{
     background-color: var(--red);
     border: 1px solid var(--red);
     border-radius: 4px;
     color: var(--white);
-    padding: 1em;
-    margin: 2em;
+    padding: 10px ;
+    margin: 10px 2px;
+
+    
 }
 /* Events */
 h2, h3{
@@ -236,40 +239,61 @@ h3{
     margin: 0 auto;
     padding: 1em;
 }
-.banner-contact{
+.contact-banner{
     background-image: url(../images/DSC09651-Edit\ -\ Edit.jpg);
     background-position: 50%;
 }
-
-/* label{
-    font-weight: bold;
-    color: white;
+.form p{
+    color: var(--white);
+    font-size: 24px;
+}
+form{
+  margin-top: 1em;
+}
+.form label{
     background-color: var(--red);
-    padding: 1em;
-} */
+    color: var(--white);
+    /* font-size: 10px; */
+    border: 10px solid var(--red);
+    /* padding: 20px;  */
+}
+.form input[type=text]{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0 30px 0;
+    box-sizing: border-box;
+}
+.form textarea{
+    width: 100%;
+    height: 244px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
 .location iframe{
-    max-width: 100%;
+    width: 100%;
     padding: 1em 0;
 }
-.contact-info2{
+.contact-info{
     background-color: var(--white);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
+    gap: -1em;
 }
-.contact-info2 p{
+.contact-info p{
     color: var(--red);
     font-size: 18px;
     padding-left: 1em;
 }
-.contact-info2 p, .contact-info2 img{
+.contact-info p, .contact-info img{
     padding: 1em;
 }
-.contact-info2 img{
+.contact-info img{
     max-width: 26px;
 }
-.contact-hours{
+.hours{
     background-color: var(--white);
     padding-bottom: 1em;
 }
@@ -295,6 +319,10 @@ h4{
 .hours-times{
     grid-area: time;
 }
+
+
+
+
 
 
 @media screen and (min-width: 765px){
@@ -353,6 +381,11 @@ h4{
     /* .takeout-icons p{
         text-align: start;
     } */
+
+    /* Contact Page */
+    .form p{
+        font-size: 32px;
+    }
    
 
 }
@@ -511,17 +544,15 @@ h4{
     .p5{
         grid-area: p5;
     } */
+
      /* Contact */
-   /* p{
-       font-size: 57px;
-       color: var(--white);
-   }
-    .contact-info{
+     .contact{
         display: grid;
         grid-template-areas: 
-        "write ."
         "form map"
-        "info hour";
+        "info hour"
+        ;
+        gap: 1em;
     }
     .form{
         grid-area: form;
@@ -529,12 +560,13 @@ h4{
     .location{
         grid-area: map;
     }
-    .contact-info2{
+    .contact-info{
         grid-area: info;
     }
-    .contact-hours{
+    .hours{
         grid-area: hour;
-    } */
+    } 
+
     
 
 
