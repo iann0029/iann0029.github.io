@@ -84,10 +84,11 @@ button{
     border: 1px solid var(--red);
     border-radius: 4px;
     color: var(--white);
-    padding: 10px ;
-    margin: 10px 2px;
-
-    
+    padding: 1em;
+    margin: 10px 2px; 
+}
+.banner button{
+    margin: 3em 0;
 }
 /* Events */
 h2, h3{
@@ -155,6 +156,7 @@ h3{
 }
 
 .catering p{
+    padding: 1em;
     color: var(--white);
     font-size: 12px;
     text-align: center;
@@ -186,10 +188,13 @@ h3{
 .banner-menu{
     background-image: url(../images/Ribs_1\ .jpg);
     background-size: 100%;
+    background-position: 50%;
+    padding: 5em;
 }
 .menu img{
     margin: 1em 0 0 1em;
-    border: 10px solid var(--brown);
+    padding: 1em 0;
+    /* border: 10px solid var(--brown); */
     
 }
 .menuphoto img{
@@ -206,11 +211,14 @@ h3{
 }
 .contact-banner{
     background-image: url(../images/DSC09651-Edit\ -\ Edit.jpg);
+    background-size: 100%;
     background-position: 50%;
+    padding: 5em;
 }
 .container p{
     color: var(--white);
     font-size: 24px;
+    margin: 1em 0;
 }
 form{
   margin-top: 1em;
@@ -255,7 +263,7 @@ form{
 }
 .contact-info img{
     max-width: 26px;
-    /* margin-left: 85px; */
+    margin-top: 4em;
 }
 .contact-info p, .contact-info img{
     padding: 1em;
@@ -310,6 +318,10 @@ h4{
         font-size: 24px;
         
     }
+    button{
+        padding: 23px 86px;
+        font-size: 28px;
+    }
     
     /* navigation */
     .list-nav{
@@ -363,7 +375,7 @@ h4{
     .site-header{
         background-color: var(--yellow);
     }
-    /* Banner */
+     /* Banner */
     .banner p{
         font-size: 52px;
     }
@@ -402,9 +414,8 @@ h4{
         justify-items: center;
         grid-template-areas: 
         ". header"
-        "poster writing1 "
-        "poster writing2"
-        " . button";
+        "poster writing "
+        ". button";
     }
     h3{
         grid-area: header;
@@ -412,23 +423,16 @@ h4{
     .catering img{
         width: 552px;
         height: 714px;
+        padding: 1em;
         grid-area: poster;
-    }
-    .write{
-        grid-area: writing1;
-        align-items: center;
-    }
-    .catering-question{
-        grid-area: writing2;
-    }
-    .contact-catering-btn{
-        grid-area: button;
     }
     .catering p{
         font-size: 40px;
         margin: 0;
-        /* float: right; */
-        
+        grid-area: writing;
+    }
+    .catering button{
+        grid-area: button;
     }
     /* Menu Page */
     .menu img{
@@ -471,13 +475,16 @@ h4{
          height: 100%;
          padding: 0;
      }
+     .hours ul, h4{
+        font-size: 32px
+     }
      .contact{
         display: grid;
         grid-template-areas: 
         "form map"
         "info hour"
         ;
-        gap: 1em;
+        gap: 4em;
     }
     .form{
         grid-area: form;
