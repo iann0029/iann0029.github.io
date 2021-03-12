@@ -242,7 +242,7 @@ form{
 .contact-info{
     background-color: var(--white);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 100px 0.5fr;
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
 }
@@ -461,6 +461,9 @@ h4{
         grid-area: p5;
     }
      /* Contact */
+     /* .location iframe{
+         max-width: 100%;
+     } */
      .contact{
         display: grid;
         grid-template-areas: 
