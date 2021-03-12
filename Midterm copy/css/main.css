@@ -245,18 +245,19 @@ form{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
-    gap: -1em;
 }
 .contact-info p{
     color: var(--red);
     font-size: 18px;
     padding-left: 1em;
+    /* margin-right: 85px; */
 }
 .contact-info p, .contact-info img{
     padding: 1em;
 }
 .contact-info img{
     max-width: 26px;
+    /* margin-left: 85px; */
 }
 .hours{
     background-color: var(--white);
