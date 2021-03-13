@@ -98,7 +98,7 @@ h2, h3{
     font-size: 24px;
     font-weight: bold;
     padding: 1em;
-    margin: 1em;
+    margin: 2em;
 }
 .events img{
     margin-bottom: 1em;
@@ -109,50 +109,20 @@ h2, h3{
 .events{
     background-color: var(--brown);
     margin: 82px 0;
-    display: grid;
-   justify-items: center;
-    grid-template-areas:
-    ". header ."
-    ". header ." 
-    ". poster1 ."
-    ". poster2 .";
 }
-h2{
-    grid-area: header;
+.images, .catering-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.poster{
-    grid-area: poster1;
-}
-.NYHposter{
-    grid-area: poster2;
-}
-
-
 /* Catering */
 .catering{
     background-color: var(--brown);
     margin-bottom: 114px;
-    display: grid;
-    justify-items: center;
-    grid-template-areas: 
-    "header"
-    "poster"
-    "writing1"
-    "writing2";
-}
-h3{
-    grid-area: header;
 }
 .catering img{
-    grid-area: poster;
     width: 237px;
-    height: 306px;
-}
-.write{
-    grid-area: writing1;
-}
-.catering-question{
-    grid-area: writing2;
+    height: 306.76px;
 }
 
 .catering p{
@@ -385,40 +355,30 @@ h4{
     }
     /* Events */
     .events img{
-        margin-bottom: 1em;
+        margin: 1em;
         width: 845px;
         height: 531px;
+       
     }
     .events{
         margin: 212px 0;
+    }
+    .images{
         display: grid;
-        justify-items: center;
-        grid-template-areas:
-        "header ." 
-        " poster1 poster2";
-    }
-    h2{
-        grid-area: header;
-    }
-    .poster{
-        grid-area: poster1;
-    }
-    .NYHposter{
-        grid-area: poster2;
+        grid-template-columns: repeat(2, 1fr);
     }
     
     /* Catering */
-    .catering{
-        margin-bottom: 139px;
+    .catering-info {
+        display: grid;
         display: grid;
         justify-items: center;
         grid-template-areas: 
-        ". header"
         "poster writing "
         ". button";
     }
-    h3{
-        grid-area: header;
+    .catering{
+        margin-bottom: 139px;
     }
     .catering img{
         width: 552px;
