@@ -93,6 +93,19 @@ button{
     padding: 1em;
     margin: 10px 2px; 
 }
+/* Adding CSS Animation to the hover to change color when hover. Using the animation properties to tell what to animate in keyframe.  */
+button:hover{
+    /* Using animation property of animation-name to set up the keyframe  */
+    animation-name: buttonhover;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+/* Using keyframe is to spcifies to the animation. */
+@keyframes buttonhover{
+    0% {background-color: var(--red);}
+    50%{background-color: #941B0C;}
+    100%{background-color: #220901;}
+}
 /* Making the banner button go center on the banner. */
 .banner button{
     margin: 3em 0;
