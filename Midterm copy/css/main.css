@@ -1,18 +1,21 @@
+/* Using html to have no margin and padding as well as having the same font thoughtout the page. */
 html{
-    font-size: 100%;
     font-family: 'Libre Franklin', sans-serif;
     padding: 0;
     margin: 0;
 }
+/* All elemts will have a no margin and set the box sizing to a default.  */
 *{
     box-sizing: inherit;
     margin: 0;
 }
+/* Using the img tag to have every images have a width of 100% as well as the height. Using the margin to have no margin on every image. */
 img{
     width: 100%;
     height: auto;
     margin: 0;
 }
+/* Using :root for my color thoughout the pages. This make it easy for me if I have to change  any of the color in the future.  */
 :root{
     --brown: #3D2B23;
     --lightbrown: #905442;
@@ -21,65 +24,68 @@ img{
     --black: black;
     --yellow: #D9AB2B;
 }
+/* In the body tag, I set the background color that is being use thoughout the page. As well has having no margin and padding. */
 body{
     background-color: var(--lightbrown);
     margin: 0;
     padding: 0;
     
 }
-/* Logo */
+/* This class is for the logo. It is being used to fix the size of the logo. */
 .logo{
     width: 89px;
     height: 70px;
-    display: flex;
 }
+/* This class is used for making the background color black to the navigation bar. */
 .site-header{
     background-color: var(--black);
 }
-/* navigation */
+/* This class is the unorder list of the navigation. Using CSS Flexbox to make it go into coloums and center it. Also, removing the list style and adding a padding. */
 .list-nav{
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1em;
-    margin: 0;
 }
+/* Adding a padding to have space around the writing on the navigation. */
 .list-nav li{
-    padding: 10px;
-    
+    padding: 10px;  
 }
+/*This class is the href of the navigation. I remove the underline on it and change the color of the writing.  */
 .list-nav li a{
     text-decoration: none;
     color: var(--lightbrown);
     
 }
+/* This is making the navigation writing hover. I change the color when hover. I use CSS Animation Transition so when you hover it, the color will move a bit slow.  */
 .list-nav li a:hover{
     color: var(--red);
     transition: all 0.5s ease-in ;
 }
-
-/* Banner */
+/* This is the banner on the homepage. Setting the image as the background so I put my content in from of it. Also, making the sizing to take it's full list. */
 .banner{
     background-image: url(../images/Ribscopy.jpg);
     background-size: 100%;
 }
+/*  Design the heading on the banner on all pages by making the text center, color, changing the font size, and the font type to bold instead of regular. This code: -webkit-text-stroke,makes the text have a outline on it.  */
 h1{
     text-align: center;
     font-size: 35px;
     font-weight: bold;
     color: var(--lightbrown);
     -webkit-text-stroke: 1px var(--black);
-    margin: 0;
 }
+/* Design the banner sloganon by making the text center, color, and changing the font size. Also using this code: -webkit-text-stroke, to have a outline on the text.  */ 
 .banner p{
     text-align: center;
     font-size: 15px;
     color: var(--lightbrown);
     -webkit-text-stroke: 0.5px var(--black);
 }
-/* Button */
+/* Design the buttons that I have on all of my pages. I change the background color as well as text color, added font, added a border and radius border. Also, added padding and margin to make it bigger and longer. */
 button{
+    font-family: 'Libre Franklin', sans-serif;;
     background-color: var(--red);
     border: 1px solid var(--red);
     border-radius: 4px;
@@ -87,10 +93,11 @@ button{
     padding: 1em;
     margin: 10px 2px; 
 }
+/* Making the banner button go center on the banner. */
 .banner button{
     margin: 3em 0;
 }
-/* Events */
+/* Both of this tags are the heading of events and catering sections. I design them by making text center, font size and weight, changing the background color and color of the text, and added padding and margin for having some room. */
 h2, h3{
     text-align: center;
     background-color: var(--red);
@@ -100,42 +107,46 @@ h2, h3{
     padding: 1em;
     margin: 2em;
 }
+/* This is the images on the event section. Changing the sizes of the images and adding a margin in the botoom to have some room between each other and space in the bottom on the last image. */
 .events img{
     margin-bottom: 1em;
     width: 311px;
     height: 188px;
     
 }
+/* This is the event section. Adding a different bacground color to the section. Adding a margin for space between the section and the banner. */
 .events{
     background-color: var(--brown);
     margin: 82px 0;
 }
+/* Using CSS Flexbox on both events and catering to make the content into column and centeing it.  */
 .images, .catering-info{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-/* Catering */
+/* This is the catering section. Adding a different bacground color to the section. Adding a margin for space between the section and the event section. */
 .catering{
     background-color: var(--brown);
     margin-bottom: 114px;
 }
+/* This is the image on the catering section. Changing the sizes of the image. */ 
 .catering img{
     width: 237px;
     height: 306.76px;
 }
-
+/* The writing on the catering section. Adding a padding around it. Changing the color of the text and the font size. */
 .catering p{
     padding: 1em;
     color: var(--white);
     font-size: 12px;
-    text-align: center;
 }
-/* Footer */
+/* This is footer. Changing the background color of the footer and changing the color of the text.  */
 .site-footer{
     background-color: var(--black);
     color: var(--white);
 }
+/* The logo on the footer. Changing the size of the logo and adding a padding around it. Using display: block and margin: 0 auto;, this makes the logo center of the footer. */
 .site-footer img{
     width: 124px;
     height: 97px;
@@ -143,11 +154,13 @@ h2, h3{
     display: block;
     margin: 0 auto;
 }
+/* The soical media icons. Using the CSS Flexbox to have space between each other evenly as well as centering it. */
 .soical-icons{
     display: flex;
     justify-content: space-evenly;
     align-content: center;
 }
+/* This is the copyright text. Making it center, adding a padding around it, and changing the font size. */
 .copy{
     padding: 1em;
     text-align: center;
@@ -155,57 +168,59 @@ h2, h3{
 }
 /* Menu Page */
 
+/* The banner on the menu page. Setting the image as the background so I put heading in front of it. Also, making the sizing to take it's full list and position it to half of the image. Adding a padding around it to make it bigger. */
 .banner-menu{
     background-image: url(../images/Ribs_1\ .jpg);
     background-size: 100%;
     background-position: 50%;
     padding: 5em;
 }
-.menu img{
-    margin: 1em 0 0 1em;
-    padding: 1em 0;
-    /* border: 10px solid var(--brown); */
-    
-}
+/* Changing the sizes of the menu imeges and adding a padding to the top and bottom to give room between each other. Using display: block and margin: 0 auto;, this makes the images center of the page*/
 .menuphoto img{
     width: 336px;
     height: 435.24px;
     display: block;
     margin: 0 auto;
+    padding: 1em 0;
 }
 /* Contact page */
+/* Using container for the content of the contact page. This is making every thing except for the banner, footer, and navigation. */
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 1em;
 }
+/* Setting the image as the background  of the banner so I put heading in front of it. Also, making the sizing to take it's full list and position it to half of the image. Adding a padding around it to make it bigger.  */
 .contact-banner{
     background-image: url(../images/DSC09651-Edit\ -\ Edit.jpg);
     background-size: 100%;
     background-position: 50%;
     padding: 5em;
 }
+/* Desing the writing in the begin of the page. Adding a marging, change font size and color. */
 .container p{
     color: var(--white);
     font-size: 24px;
     margin: 1em 0;
 }
+/* Adding a margin to the form to have some room between the writing the form. */
 form{
   margin-top: 1em;
 }
+/* Design the labels on the form. Changing the background color, text color, and adding a border. */
 .form label{
     background-color: var(--red);
     color: var(--white);
-    /* font-size: 10px; */
     border: 10px solid var(--red);
-    /* padding: 20px;  */
 }
+/* Design the input on the form. Making the width of the imput full width, making height bigger, and adding a margin.*/
 .form input[type=text]{
     width: 100%;
     height: 50px;
     margin: 10px 0 30px 0;
     box-sizing: border-box;
 }
+/* Same idea as the input (the code above it) by adding a padding for make it better. */
 .form textarea{
     width: 100%;
     height: 244px;
@@ -213,10 +228,12 @@ form{
     margin: 8px 0;
     box-sizing: border-box;
 }
+/* This the map. Making the width of the map to it's full width and adding padding to it.  */
 .location iframe{
     width: 100%;
     padding: 1em 0;
 }
+/* This the info of contact. Using CSS Grid to make it the writing line up with the icons as well as keeping everything together and centering it. */
 .contact-info{
     background-color: var(--white);
     display: grid;
@@ -225,31 +242,34 @@ form{
     justify-content: center;
     align-content: center;
 }
+/* Design the writing of the info of contents. Changing the color and fixing the font size.  */
 .contact-info p{
     color: var(--red);
     font-size: 18px;
-    padding-left: 1em;
-    /* margin-right: 85px; */
 }
+/* This is the icons on the info of contact. Fixing the size of the icons and adding margin on top to make it more center. */
 .contact-info img{
     max-width: 26px;
     margin-top: 4em;
 }
+/* Adding a padding to the writing and the icons in the info of contact. */
 .contact-info p, .contact-info img{
     padding: 1em;
 }
+/* This is the hours list. Changing the background color, adding padding in the bottom, amd margin on the top and the bottom. */
 .hours{
     background-color: var(--white);
     padding-bottom: 1em;
     margin: 21px 0;
 }
+/* h4 is for the heading on the hour list. Designing it by centering and change color of the text, font size, and padding on the top and the bottom. */
 h4{
     text-align: center;
     padding: 1em 0;
     font-size: 30px;
     color: var(--red);
 }
-
+/* Using CSS Grid to make the list of hour side by side each other and making it center.  */
 .hour{
     list-style: none;
     font-size: 28px;
@@ -270,12 +290,9 @@ h4{
     grid-area: time;
 }
 
-
-
-
-
-
+/* Using media queries for the changes from mobile to tablet. */
 @media screen and (min-width: 765px){
+    /* Changing the font size and the outline size on the heading and p on the banner */
     h1{
         font-size: 67px;
         -webkit-text-stroke: 3px var(--black);
@@ -284,50 +301,57 @@ h4{
         font-size: 28px;
         -webkit-text-stroke: 1px var(--black);
     }
+    /* Changing the font size on the catering p. */
     .catering p{
         font-size: 24px;
         
     }
+    /* Changing the padding to make it bigger and the font size on all the buttons */
     button{
         padding: 23px 86px;
         font-size: 28px;
     }
     
-    /* navigation */
+    /* Using CSS Flebox to make the navigation go into a row and space every out evenly. */
     .list-nav{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
+    /* Fixing the sizing of the logo. */
     .logo{
         width: 131px;
         height: 103px;
     }
-    /* Events */
+    /* Changing the margin top and bottom on the events section to give it room between the other sections on the page. */
     .events{
         margin: 139px 0;
     }
+    /* Changing the sizes of the images on the event section. */
     .events img{
         margin-bottom: 1em;
         width: 588px;
         height: 435px;
     }
-    /* Catering */
+    /* Changing the margin top and bottom on the catering section to give it room between the other sections on the page.  */
     .catering{
         margin-bottom: 114px;
     }
+    /* Changing the sizes of the images on the catering section. */
     .catering img{
         width: 465px;
         height: 601px;
     }
 
     /* Menu Page */
+    /* Changing the sizes of the images of the menus. */
     .menuphoto img{
         width: 616px;
         height: 798.24px;
     }
 
     /* Contact Page */
+    /* Changing the font size on the wriitng. */
     .container p{
         font-size: 32px;
     }
@@ -335,57 +359,59 @@ h4{
 
 }
 
+/* Using media queries for the changes from tablet to desktop. */
 @media screen and (min-width: 1500px){
+    /*  Changing the font size the heading on the homepage. */
     h1{
         font-size: 132px;
     }
     h2, h3{
         font-size: 40px ;
     }
-    .site-header{
-        background-color: var(--yellow);
-    }
-     /* Banner */
+    /* Changing the font size on the banner. */
     .banner p{
         font-size: 52px;
     }
+     /* Fixing the sizing of the logo. */
     .logo{
         width: 187px;
         height: 147px;
     }
-    /* Events */
+    /* Changing the sizes of the images on the event section. */
     .events img{
         margin: 1em;
         width: 845px;
         height: 531px;
-       
     }
+    /* Changing the margin top and bottom on the events section to give it room between the other sections on the page.  */
     .events{
         margin: 212px 0;
     }
+    /* Using CSS Grid to make the images on the event section go into 1 column. */
     .images{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    
-    /* Catering */
+    /* Using CSS Grid to make the photo on one side and the writing on another.  */
     .catering-info {
-        display: grid;
         display: grid;
         justify-items: center;
         grid-template-areas: 
         "poster writing "
         ". button";
     }
+    /* Adding a margin to the bottom of the section of room. */
     .catering{
         margin-bottom: 139px;
     }
+    /* Changing the sizes of the image and adding a padding. */
     .catering img{
         width: 552px;
         height: 714px;
         padding: 1em;
         grid-area: poster;
     }
+    /* Changing the font size and having no magrin. */
     .catering p{
         font-size: 40px;
         margin: 0;
@@ -395,12 +421,13 @@ h4{
         grid-area: button;
     }
     /* Menu Page */
+    /* Adding a margin for room between around it. */
     .menu img{
         margin: 1em 6em 1em 6em;
         width: 712px;
         height: 921px;
-        
     }
+    /* Adding no magrin. Using CSS Grid to make the images of the menu go to rows. */
     .menuphoto {
         margin: 0;
         display: grid;
@@ -430,14 +457,17 @@ h4{
         grid-area: p5;
     }
      /* Contact */
+     /* Making the width of the map to it's full max width and height. Adding no padding.  */
      .location iframe{
          max-width: 100%;
          height: 100%;
          padding: 0;
      }
+     /* Changing the font size of the hour section. */
      .hours ul, h4{
         font-size: 32px
      }
+     /* Using CSS Grid to contact page content slip up in 4 section (go 2 section per column). */
      .contact{
         display: grid;
         grid-template-areas: 
@@ -459,8 +489,5 @@ h4{
         grid-area: hour;
         margin: 0;
     } 
-
-    
-
 
 }
