@@ -106,9 +106,10 @@ button:hover{
     50%{background-color: #941B0C;}
     100%{background-color: #220901;}
 }
-/* Making the banner button go center on the banner. */
-.banner button{
-    margin: 3em 0;
+/* Using CSS Flexbox on the 2 button at the banner to make them be center of the banner.*/
+.banner-button{
+    display: flex;
+    justify-content: center;
 }
 /* Both of this tags are the heading of events and catering sections. I design them by making text center, font size and weight, changing the background color and color of the text, and added padding and margin for having some room. */
 h2, h3{
@@ -284,7 +285,6 @@ h4{
 }
 /* Using CSS Grid to make the list of hour side by side each other and making it center.  */
 .hour{
-    list-style: none;
     font-size: 28px;
     color: var(--red);
     display: grid;
@@ -297,9 +297,11 @@ h4{
     padding: 0;
 }
 .hours-days{
+    list-style: none;
     grid-area: day;
 }
 .hours-times{
+    list-style: none;
     grid-area: time;
 }
 
