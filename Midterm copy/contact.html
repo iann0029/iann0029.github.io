@@ -11,24 +11,32 @@
     <title>Midterm 2-Maison Fumee</title>
 </head>
 <body>
-        <header class="site-header">
+    <!-- Using the header tag to put the navigation in  -->
+    <header class="site-header">
+        <!-- Using the nav tag to add the navigation to the website with a class to be specific when styling in CSS -->
             <nav class="main-nav">
-                <ul class="list-nav">
-                    <li> <a href="index.html"><img src="images/Maison_Fumme_BBQ_Logowhite.png" alt="logo of the website" class="logo"></a></li>
-                    <li> <a href="menu.html" class="active">MENU</a></li>
-                    <li> <a href="#" class="active">TAKEOUT</a></li>
-                    <li> <a href="#" class="active">RESERVATION</a></li>
-                    <li> <a href="contact.html" class="active">CONTACT</a></li>
+                <!-- Using unorder list for the navigation and the logo. Putting the logo with the unorder list makes it easy for me in CSS to be on the same line as the rest of navigation. -->
+               <ul class="list-nav">
+                   <!-- a href is used to link up the other pages on the website. Using li tag to list the navigation. -->
+                   <li> <a href="index.html"><img src="images/Maison_Fumme_BBQ_Logowhite.png" alt="logo of the website" class="logo"></a></li>
+                   <li> <a href="menu.html" class="active">MENU</a></li>
+                   <li> <a href="#" class="active">TAKEOUT</a></li>
+                   <li> <a href="#" class="active">RESERVATION</a></li>
+                   <li> <a href="contact.html" class="active">CONTACT</a></li>
 
-                </ul>
-            </nav>
-        </header>
+               </ul>
+           </nav>
+       </header>
+        <!-- Using the div tag for the banner on the menu page. Also, for adding the background image in CSS.  -->
         <section class="contact-banner">
             <h1>CONTACT</h1>
         </section>
+        <!-- using the div tag with a class of container to make all of the content center in CSS. -->
         <div class="container">
             <p>Want to send us a Hello or a simple message? Fill the boxes below.</p>
+            <!-- Using the div tag for the content on the content page.  -->
             <div class="contact">
+                <!-- Using the section tag for the form on the contact page.  -->
                 <section class="form">
                     <form action="thanks.html" method="post">
                         <label for="fullname">FULL NAME</label>
@@ -40,9 +48,11 @@
                         <button type="submit">SEND</button>
                     </form>
                 </section>
+                <!-- Using the section tag for the map. -->
                 <section class="location">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11189.355441203059!2d-75.6161612!3d45.4831206!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4722dc5e012691e7!2sMaison%20Fum%C3%A9e%20BBQ!5e0!3m2!1sen!2sca!4v1615557776973!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </section>
+                <!-- Using the section tag for the info on how to contact the business. -->
                 <section class="contact-info">
                     <img src="icons/iconmonstr-location-1.svg" alt="location icon">
                     <p>779 Boulevard Maloney E, Gatineau, QC </p>
@@ -51,8 +61,10 @@
                     <img src="icons/iconmonstr-email-3.svg" alt="email icon">
                     <p>info@maisonfumeebbq.com</p>
                 </section>
+                <!-- Using section tag for the hours of the business. -->
                 <section class="hours">
                     <h4>HOURS</h4>
+                    <!-- Using the unorder list of the days and giving a class to be specific in CSS. -->
                     <div class="hour">
                         <ul class="hours-days">
                             <li>Monday</li>
@@ -63,6 +75,7 @@
                             <li>Saturday</li>
                             <li>Sunday</li>
                         </ul>
+                          <!-- Using the unorder list of the time they are open and giving a class to be specific in CSS. -->
                         <ul class="hours-times">
                             <li>Closed</li>
                             <li>3pm - 9pm</li>
@@ -76,16 +89,19 @@
                 </section>
             </div>
         </div>
-            <footer class="site-footer">
-                <img src="images/Maison_Fumme_BBQ_Logowhite.png" alt="photo od the logo">
-                <div class="soical-icons">
-                    <i class="im im-instagram"></i>
-                    <i class="im im-facebook"></i>
-                    <i class="im im-twitter"></i>
-                </div>
-                <div class="copy">
-                    &copy; 2021 Maison Fumée BBQ Smokehouse Copyright
-                </div>
-            </footer>
+         <!-- Using the footer tag for the footer section with a class to be specific in CSS.  -->
+         <footer class="site-footer">
+            <img src="images/Maison_Fumme_BBQ_Logowhite.png" alt="photo od the logo">
+            <!-- Using the div tag for the soical media icons in the footer with a class to be specific in CSS. -->
+            <div class="soical-icons">
+                 <i class="im im-instagram"></i>
+                 <i class="im im-facebook"></i>
+                <i class="im im-twitter"></i>
+            </div>
+            <!-- Using the div tag to add the copyright in the footer.  -->
+            <div class="copy">
+                &copy; 2021 Maison Fumée BBQ Smokehouse Copyright
+           </div>
+       </footer>
 </body>
 </html>
