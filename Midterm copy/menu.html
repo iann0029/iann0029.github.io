@@ -4,48 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+     <!-- The 2 links is to link up to the google font that is to be used in CSS. -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <title>Midterm 2-Maison Fumee-Menu</title>
+    <title>Midterm -Maison Fumee-Menu</title>
 </head>
 <body>
-        <header class="site-header">
+     <!-- Using the header tag to put the navigation in  -->
+     <header class="site-header">
+        <!-- Using the nav tag to add the navigation to the website with a class to be specific when styling in CSS -->
             <nav class="main-nav">
-                <ul class="list-nav">
-                    <li> <a href="index.html"><img src="images/Maison_Fumme_BBQ_Logowhite.png" alt="logo of the website" class="logo"></a></li>
-                    <li> <a href="menu.html" class="active">MENU</a></li>
-                    <li> <a href="#" class="active">TAKEOUT</a></li>
-                    <li> <a href="#" class="active">RESERVATION</a></li>
-                    <li> <a href="contact.html" class="active">CONTACT</a></li>
+                <!-- Using unorder list for the navigation and the logo. Putting the logo with the unorder list makes it easy for me in CSS to be on the same line as the rest of navigation. -->
+               <ul class="list-nav">
+                   <!-- a href is used to link up the other pages on the website. Using li tag to list the navigation. -->
+                   <li> <a href="index.html"><img src="images/Maison_Fumme_BBQ_Logowhite.png" alt="logo of the website" class="logo"></a></li>
+                   <li> <a href="menu.html" class="active">MENU</a></li>
+                   <li> <a href="#" class="active">TAKEOUT</a></li>
+                   <li> <a href="#" class="active">RESERVATION</a></li>
+                   <li> <a href="contact.html" class="active">CONTACT</a></li>
 
-                </ul>
-            </nav>
-        </header>
+               </ul>
+           </nav>
+       </header>
+       <!-- Using the section tag for the content on the menu page.  -->
         <section class="menu">
-        <div class="banner-menu">
+            <!-- Using the div tag for the banner on the menu page. Also, for adding the background image in CSS.  -->
+            <div class="banner-menu">
             <h1>MENU</h1>
-        </div>
-        <div class="menuphoto">
-            <img src="menuimages/MaisonFumeeBBQ6PG.png" alt="photo of the menu" class="menu1">
-            <img src="menuimages/MaisonFumeeBBQ6PG2.png" alt="photo of the menu" class="menu2">
-            <img src="menuimages/MaisonFumeeBBQ6PG3.png" alt="photo of the menu" class="menu3">
-            <img src="menuimages/MaisonFumeeBBQ6PG4.png" alt="photo of the menu" class="menu4">
-            <img src="menuimages/MaisonFumeeBBQ6PG5.png" alt="photo of the menu" class="menu5">
-            <img src="menuimages/MaisonFumeeBBQ6PG6.png" alt="photo of the menu" class="menu6">
-        </div>
+            </div>
+            <!-- Using a div tag for photos of the images. -->
+            <div class="menuphoto">
+                <img src="menuimages/MaisonFumeeBBQ6PG.png" alt="photo of the menu" class="menu1">
+                <img src="menuimages/MaisonFumeeBBQ6PG2.png" alt="photo of the menu" class="menu2">
+                <img src="menuimages/MaisonFumeeBBQ6PG3.png" alt="photo of the menu" class="menu3">
+                <img src="menuimages/MaisonFumeeBBQ6PG4.png" alt="photo of the menu" class="menu4">
+                <img src="menuimages/MaisonFumeeBBQ6PG5.png" alt="photo of the menu" class="menu5">
+                <img src="menuimages/MaisonFumeeBBQ6PG6.png" alt="photo of the menu" class="menu6">
+            </div>
         </section>
-    <footer class="site-footer">
-        <img src="images/Maison_Fumme_BBQ_Logowhite.png" alt="photo od the logo">
-        <div class="soical-icons">
-            <i class="im im-instagram"></i>
-            <i class="im im-facebook"></i>
-            <i class="im im-twitter"></i>
-        </div>
-        <div class="copy">
-            &copy; 2021 Maison Fumée BBQ Smokehouse Copyright
-        </div>
-    </footer>
+         <!-- Using the footer tag for the footer section with a class to be specific in CSS.  -->
+         <footer class="site-footer">
+            <img src="images/Maison_Fumme_BBQ_Logowhite.png" alt="photo od the logo">
+            <!-- Using the div tag for the soical media icons in the footer with a class to be specific in CSS. -->
+            <div class="soical-icons">
+                 <i class="im im-instagram"></i>
+                 <i class="im im-facebook"></i>
+                <i class="im im-twitter"></i>
+            </div>
+            <!-- Using the div tag to add the copyright in the footer.  -->
+            <div class="copy">
+                &copy; 2021 Maison Fumée BBQ Smokehouse Copyright
+           </div>
+       </footer>
 </body>
 </html>
