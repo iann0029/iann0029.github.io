@@ -264,10 +264,7 @@ form{
 /* This is the icons on the info of contact. Fixing the size of the icons and adding margin on top to make it more center. */
 .contact-info img{
     max-width: 26px;
-    margin-top: 4em;
-}
-/* Adding a padding to the writing and the icons in the info of contact. */
-.contact-info p, .contact-info img{
+    margin-top: 1em;
     padding: 1em;
 }
 /* This is the hours list. Changing the background color, adding padding in the bottom, amd margin on the top and the bottom. */
@@ -285,7 +282,7 @@ h4{
 }
 /* Using CSS Grid to make the list of hour side by side each other and making it center.  */
 .hour{
-    font-size: 28px;
+    font-size: 18px;
     color: var(--red);
     display: grid;
     grid-template-areas: 
@@ -368,6 +365,14 @@ h4{
     /* Contact Page */
     /* Changing the font size on the wriitng. */
     .container p{
+        font-size: 32px;
+    }
+    /* Adding margin on top to the icons */
+    .contact-info img{
+        margin-top: 1em;
+    }
+    /* Changing the font size to the hour content. */
+    .hour{
         font-size: 32px;
     }
    
