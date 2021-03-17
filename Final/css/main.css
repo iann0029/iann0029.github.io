@@ -25,7 +25,7 @@ img{
 }
 /* In the body tag, I set the background color that is being use thoughout the page. As well has having no margin and padding. */
 body{
-    background-color: var(--lightbrown);
+    background-color: var(--main);
     margin: 0;
     padding: 0;
     
