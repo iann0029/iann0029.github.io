@@ -1,0 +1,8 @@
+Pages that work:
+1) Homepage
+2) About 
+3) Contact 
+This business is my dad and uncle restaurants.
+All photo on the website were taken from the business.
+My dad and my uncle gave me the permission to use them.
+font: Libre Franklin from google fonts
