@@ -1,0 +1,32 @@
+/* Using html to have no margin and padding as well as having the same font thoughtout the page. */
+html{
+    font-family: 'Libre Franklin', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* All elemts will have a no margin and set the box sizing to a default.  */
+*{
+    box-sizing: inherit;
+    margin: 0;
+}
+/* Using the img tag to have every images have a width of 100% as well as the height. Using the margin to have no margin on every image. */
+img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+/* Using :root for my color thoughout the pages. This make it easy for me if I have to change  any of the color in the future.  */
+:root{
+   --main: #2D3D50;
+   --font: #FFFEFB;
+   --second: #181919;
+   --button: #858C84;
+   --third: #972718;
+}
+/* In the body tag, I set the background color that is being use thoughout the page. As well has having no margin and padding. */
+body{
+    background-color: var(--lightbrown);
+    margin: 0;
+    padding: 0;
+    
+}
