@@ -412,6 +412,11 @@ h4{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    /* Making the image in the catering section take it's maximun width. */
+    .catering-info img{
+        display: block;
+        max-width: 100%;
+    }
     /* Using CSS Grid to make the photo on one side and the writing on another.  */
     .catering-info {
         display: grid;
