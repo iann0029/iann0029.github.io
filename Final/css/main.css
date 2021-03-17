@@ -1,6 +1,6 @@
 /* Using html to have no margin and padding as well as having the same font thoughtout the page. */
 html{
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Cabin', sans-serif;
     padding: 0;
     margin: 0;
 }
