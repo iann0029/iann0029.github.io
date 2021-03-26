@@ -9,11 +9,10 @@ html{
     box-sizing: inherit;
     margin: 0;
 }
-/* Using the img tag to have every images have a width of 100% as well as the height. Using the margin to have no margin on every image. */
+/* Using the img tag to have every images have a max-width of 100% as well as the height. Using the margin to have no margin on every image. */
 img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    margin: 0;
 }
 /* Using :root for my color thoughout the pages. This make it easy for me if I have to change  any of the color in the future.  */
 :root{
