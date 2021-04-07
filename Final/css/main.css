@@ -113,3 +113,7 @@ body{
 label{
     background-color: var(--third);
 }
+.photo-graphic img{
+    height: 332px;
+    width: auto;
+}
