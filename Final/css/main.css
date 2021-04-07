@@ -1,14 +1,6 @@
-/* Using html to have no margin and padding as well as having the same font thoughtout the page. */
-html{
-    font-family: 'Cabin', sans-serif;
-    padding: 0;
-    margin: 0;
-}
-/* All elemts will have a no margin and set the box sizing to a default.  */
-*{
-    box-sizing: inherit;
-    margin: 0;
-}
+
+
+
 /* Using the img tag to have every images have a max-width of 100% as well as the height. Using the margin to have no margin on every image. */
 img{
     max-width: 100%;
@@ -22,10 +14,77 @@ img{
    --button: #858C84;
    --third: #972718;
 }
-/* In the body tag, I set the background color that is being use thoughout the page. As well has having no margin and padding. */
+
 body{
     background-color: var(--main);
-    margin: 0;
-    padding: 0;
-    
+    color: var(--font);
+    font-family: 'Cabin', sans-serif;
+}
+
+/* Banner BAckground */
+.banner-about{
+    background-image: url(../images/andrew-neel-cckf4TsHAuw-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 323px;
+}
+.banner-service{
+    background-image: url(../images/dj-watson-Jz1aZQewW04-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 323px;
+}
+.banner-portfolio{
+    background-image: url(../images/bailey-mahon-2b6K4uy0Hbc-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 323px;
+}
+.banner-contact{
+    background-image: url(../images/headway-5QgIuuBxKwM-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 323px;
+}
+.info{
+    font-size: 14px;
+}
+
+.button{
+    background-color: var(--button);
+    color: var(--font);
+    height: 67px;
+    width: 260px;
+    font-size: 20px;
+}
+.button-form{
+    background-color: var(--third);
+    color: var(--font);
+    height: 67px;
+    width: 260px;
+    font-size: 20px;
+}
+.contactinfo{
+    background-color: var(--third);
+}
+/* Adding circle to the card  */
+.servicecard{
+    height: 311.23px;
+}
+.circle{
+    background: var(--font);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.servicecard img{
+    width: 68px;
+    height: 68px;
+}
+label{
+    background-color: var(--third);
 }
