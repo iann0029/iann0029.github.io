@@ -19,6 +19,7 @@ body{
     background-color: var(--main);
     color: var(--font);
     font-family: 'Cabin', sans-serif;
+    font-size: 14px;
 }
 
 /* Banner BAckground */
@@ -75,11 +76,35 @@ body{
 .servicecard{
     height: 311.23px;
 }
+.servicecard h2{
+    font-size: 24px;
+}
 .circle{
+    display: block;
+    margin: 0 auto;
     background: var(--font);
-    width: 100px;
-    height: 100px;
+    width: 118px;
+    height: 118px;
     border-radius: 50%;
+    background-image: url(../icons/graphic-design.png);
+    background-size: 68px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.circle-photo{
+    background-image: url(../icons/iconmonstr-photo-camera-4.svg);
+}
+.circle-video{
+    background-image: url(../icons/iconmonstr-video-camera-1.svg);
+}
+.circle-graphic{
+    background-image: url(../icons/vector.png);
+}
+.circle-UI{
+    background-image: url(../icons/web-design.png);
+}
+.circle-code{
+    background-image: url(../icons/iconmonstr-code-2.svg);
 }
 .servicecard img{
     width: 68px;
