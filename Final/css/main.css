@@ -30,6 +30,7 @@ body{
     background-position: center;
     height: 323px;
 }
+
 .banner-service{
     background-image: url(../images/dj-watson-Jz1aZQewW04-unsplash.jpg);
     background-size: 100%;
@@ -51,6 +52,11 @@ body{
     background-position: center;
     height: 323px;
 }
+.banner-about h1, .banner-contact h1,
+.banner-portfolio h1, .banner-service h1{
+    font-size: 60px;
+    padding: 1.7em;
+}
 .info{
     font-size: 14px;
 }
@@ -71,6 +77,10 @@ body{
 }
 .contactinfo{
     background-color: var(--third);
+}
+.icon{
+    max-width: 67px;
+    height: 62px;
 }
 /* Adding circle to the card  */
 .servicecard{
