@@ -23,3 +23,6 @@ https://www.flaticon.com/free-icon/vector_751418?term=vector&page=1&position=14&
 https://www.flaticon.com/free-icon/graphic-design_1379311?related_id=1379311
 https://iconmonstr.com/phone-1-svg/
 https://iconmonstr.com/email-4-svg/
+
+Logos:
+https://wordpress.org/about/logos/

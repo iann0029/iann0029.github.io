@@ -14,15 +14,22 @@ img{
    --button: #858C84;
    --third: #972718;
 }
-
+/* In the body tag, I set the background color, colour, font, and font size that is being use thoughout the page. */
 body{
     background-color: var(--main);
     color: var(--font);
     font-family: 'Cabin', sans-serif;
     font-size: 14px;
 }
-
-/* Banner BAckground */
+/* Using this class in HTML to make it easier to for colouring the background black */
+.colour-black{
+    background-color: var(--second);
+}
+/* This class is used for the background colour to be red */
+.colour-red{
+    background-color: var(--third);
+}
+/* Using the banners classes to add an images in the background  */
 .banner-about{
     background-image: url(../images/andrew-neel-cckf4TsHAuw-unsplash.jpg);
     background-size: 100%;
@@ -52,15 +59,17 @@ body{
     background-position: center;
     height: 323px;
 }
+/* Using the banners class for each banners h1 to change the font size and padding */
 .banner-about h1, .banner-contact h1,
 .banner-portfolio h1, .banner-service h1{
     font-size: 60px;
     padding: 1.7em;
 }
+/* Changing the font size of the heading on the homepage headings  */
 .info{
     font-size: 14px;
 }
-
+/* Styling the button in all of the pages by background, colour, height, width, font size */
 .button{
     background-color: var(--button);
     color: var(--font);
@@ -68,6 +77,7 @@ body{
     width: 260px;
     font-size: 20px;
 }
+/* Styling the button in to form. It is the same as the button but the only change is the background colour */
 .button-form{
     background-color: var(--third);
     color: var(--font);
@@ -75,20 +85,20 @@ body{
     width: 260px;
     font-size: 20px;
 }
-.contactinfo{
-    background-color: var(--third);
-}
+/* Using this class for the sizing of the icon images in the contact */
 .icon{
     max-width: 67px;
     height: 62px;
 }
-/* Adding circle to the card  */
+/* Using this class for the cards in the servixce page and homepage. This is styling the cards height  */
 .servicecard{
     height: 311.23px;
 }
+/* Styling the heading on the cards that is being used on the service page and homepage  */
 .servicecard h2{
     font-size: 24px;
 }
+/* Adding a circle to the cards and adding the icons as a background image and styling it.*/
 .circle{
     display: block;
     margin: 0 auto;
@@ -101,28 +111,31 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+/* Adding a different background image */
 .circle-photo{
     background-image: url(../icons/iconmonstr-photo-camera-4.svg);
 }
+/* Adding a different background image */
 .circle-video{
     background-image: url(../icons/iconmonstr-video-camera-1.svg);
 }
+/* Adding a different background image */
 .circle-graphic{
     background-image: url(../icons/vector.png);
 }
+/* Adding a different background image */
 .circle-UI{
     background-image: url(../icons/web-design.png);
 }
+/* Adding a different background image */
 .circle-code{
     background-image: url(../icons/iconmonstr-code-2.svg);
 }
-.servicecard img{
-    width: 68px;
-    height: 68px;
-}
+/* Adding a background colour to the labels in the form on the contact page */
 label{
     background-color: var(--third);
 }
+/* Adding height and width to the images of the phoyography and graphic design section in porfolio. */
 .photo-graphic img{
     height: 332px;
     width: auto;
