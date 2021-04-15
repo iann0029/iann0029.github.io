@@ -17,26 +17,33 @@
     <title>Final - Portfolio</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light navbar-light navbar-dark bg-dark">
-      <a href="index.html" class="navbar-brand">
-        <img src="images/logo.png" class="bg-white p-2" alt="photo of my logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="navbar-nav bg-main">
-          <a href="about.html" class="nav-link active">ABOUT</a>
-          <a href="service.html" class="nav-link active">SERVICE</a>
-          <a href="portfolio.html" class="nav-link active">PORTFOLIO</a>
-          <a href="contact.html" class="nav-link active">CONTACT</a>
+    <!-- Adding the Navbar.  -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+      <!-- Adding the my logo to the Navbar and when clicking on it, goes back to the homepage. -->
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo.png" class="navbar-logo" alt="photo of my logo">
+        </a>
+        <!-- Adding the toggler button. -->
+        <button class="navbar-toggler toggler-colour" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- This div to make it dropdown when click on the toggler button. -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Using a unorder list for the other pages names on the Navbar. Using the a href for each unorder list to tell it where to go when click on it. -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a href="about.html" class="nav-link ">ABOUT</a></li>
+            <li class="nav-item"><a href="service.html" class="nav-link ">SERVICE</a></li>
+            <li class="nav-item"><a href="portfolio.html" class="nav-link ">PORTFOLIO</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link ">CONTACT</a></li>
+          </ul>
         </div>
       </div>
     </nav>
     <section class="banner-portfolio">
         <h1 class="text-center">PORTFOLIO</h1>
     </section>
-    <section class="bg-info mt-5">
+    <section class="colour-black mt-5">
         <div class="container">
             <div class="row">
                 <div class="col mb-5">
@@ -44,78 +51,99 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col mb-5">
-                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <a href="https://youtu.be/ANIJp5lHNdQ">
-                                <img src="portfolio/Interviewvideo.png" class="d-block w-100" alt="photo of interview video">
-                            </a>
-                          </div>
-                          <div class="carousel-item">
-                            <a href="https://youtu.be/sYhycLKrE9s">
-                                <img src="portfolio/gamenightvideo.png" class="d-block w-100" alt="photo of video">
-                            </a>
-                          </div>
-                          <div class="carousel-item">
-                            <a href="https://www.youtube.com/watch?v=mb--ynAcsjs">
-                                <img src="portfolio/audioexercisevideo.png" class="d-block w-100" alt="photo of video">
-                            </a>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+              <div class="col mb-5">
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <a href="https://youtu.be/ANIJp5lHNdQ">
+                        <img src="portfolio/Interviewvideo.png" class="d-block w-100" alt="photo of interview video">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="https://youtu.be/sYhycLKrE9s">
+                        <img src="portfolio/gamenightvideo.png" class="d-block w-100" alt="photo of video">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="https://www.youtube.com/watch?v=mb--ynAcsjs">
+                        <img src="portfolio/audioexercisevideo.png" class="d-block w-100" alt="photo of video">
+                      </a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
+              </div>
             </div>
         </div>
     </section>
-    <section class="photo-graphic">
-      <div class="contianer">
+    <section class="photo-graphic mt-5">
+      <div class="container">
         <div class="row">
-          <div class="col-md-5 me-5 bg-dark">
-            <h1 class="mb-5 mt-5">Photography</h1>
-            <img src="portfolio/IANNI_P_Monday.jpg" alt="photo of pie" class="mb-5">
-            <img src="portfolio/IMG_4187.JPG" alt="photo of hot pepper"class="mb-5">
-            <img src="portfolio/IMG_3911.JPG" alt=" photo of sens" >
+          <div class="col-md-5 colour-black">
+            <h1 class="mt-5">Photography</h1>
+            <img src="portfolio/IANNI_P_Monday.jpg" alt="photo of pie" class="mt-5">
+            <img src="portfolio/IMG_4187.JPG" alt="photo of hot pepper" class="mt-5">
+            <img src="portfolio/IMG_3911.JPG" alt="photo of Senators" class="my-5">
           </div>
-          <div class="col-md-5 bg-dark">
-            <h1 class="mb-5 mt-5">Graphic Design</h1>
-            <img src="portfolio/ryan dzingel jersey swap.png" alt="photo of jersey swap" class="mb-5">
-            <img src="portfolio/avator-icon.png" alt="photo of avator" class="mb-5"> <br>
-            <img src="portfolio/poster assignmentpsd.jpg" alt="photo of movie poster" class="mb-5">
+          <div class="col-md-5 colour-black mt-5 mt-md-0 ms-2">
+            <h1 class="mt-5">Photography 2</h1>
+            <img src="portfolio/ryan dzingel jersey swap.png" alt="photo of pie" class="mt-5">
+            <img src="portfolio/avator-icon.png" alt="photo of hot pepper" class="mt-5">
+            <img src="portfolio/poster assignmentpsd.jpg" alt="photo of Senators" class="my-5 float-md-end">
           </div>
         </div>
       </div>
-      <section class="bg-dark mt-5 mb-5">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h1 class="mt-5 mb-5">Web Design And Coding</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <img src="portfolio/website-maisonfumee.png" alt="photo of website" class=" mb-5">
-            </div>
-            <div class="col-lg-6">
-              <img src="portfolio/star.png" alt="photo of website" class=" mb-5">
-            </div>
+    </section>
+    <section class="colour-black my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="mt-5 mb-5">Web Design And Coding</h1>
           </div>
         </div>
-      </section>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="portfolio/website-maisonfumee.png" alt="photo of website" class=" mb-5">
+          </div>
+          <div class="col-lg-6">
+            <img src="portfolio/star.png" alt="photo of website" class=" mb-5">
+          </div>
+        </div>
+      </div>
     </section>
+  <!-- This section is for if user like what they see and want to contact me.   -->
+  <!-- Class in the section tag used for background colour (used that class in css), the margin top and bottom.  -->
+  <section class=" my-5 colour-red">
+    <!-- Using bootstrap grid system. -->
+    <div class="container">
+      <div class="row">
+        <!-- This col is for the heading and writing. When it hits md, it will go to up to line 7.  -->
+        <div class="col-md-7">
+          <!-- Using margin for the top only  -->
+          <h1 class="mt-4">Want To Work With Me</h1>
+          <p> Have a question? Like what you see so far? What to work with me on your next project? Click on the Contact button to see how to contact me.</p>
+        </div>
+        <!-- This col is for the button. When it hits md, it will take up 5 lines after 7.  -->
+        <div class="col-md-5">
+          <div class="d-grid p-md-5 mx-auto mb-5">
+            <button class="btn button" type="button">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
     <section class="bg-dark">
       <div class="container">
         <div class="row pt-5 pb-5">

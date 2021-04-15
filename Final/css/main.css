@@ -29,6 +29,27 @@ body{
 .colour-red{
     background-color: var(--third);
 }
+/* Change the background colour of the navbar. Using !important to over write it so that it will appear. */
+.navbar{
+    background-color: var(--second) !important; 
+}
+
+/* Change the colour of the navbar writiing. Using !important to over write it so that it will appear. */
+.navbar-nav li a{
+    color: var(--font) !important;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+/* Styling the logo on the navagtion bar by adding a background colour, padding, width, and height of the image. */
+.navbar-logo{
+    background-color: var(--font);
+    padding: 10px;
+    max-width: 187px;
+    height: auto;
+}
+
+
 /* Using the banners classes to add an images in the background  */
 .banner-about{
     background-image: url(../images/andrew-neel-cckf4TsHAuw-unsplash.jpg);

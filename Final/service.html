@@ -17,19 +17,26 @@
     <title>Final - Portfolio</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light navbar-light navbar-dark bg-dark">
-      <a href="index.html" class="navbar-brand">
-        <img src="images/logo.png" class="bg-white p-2" alt="photo of my logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="navbar-nav bg-main">
-          <a href="about.html" class="nav-link active">ABOUT</a>
-          <a href="service.html" class="nav-link active">SERVICE</a>
-          <a href="portfolio.html" class="nav-link active">PORTFOLIO</a>
-          <a href="contact.html" class="nav-link active">CONTACT</a>
+    <!-- Adding the Navbar.  -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+      <!-- Adding the my logo to the Navbar and when clicking on it, goes back to the homepage. -->
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo.png" class="navbar-logo" alt="photo of my logo">
+        </a>
+        <!-- Adding the toggler button. -->
+        <button class="navbar-toggler toggler-colour" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- This div to make it dropdown when click on the toggler button. -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Using a unorder list for the other pages names on the Navbar. Using the a href for each unorder list to tell it where to go when click on it. -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a href="about.html" class="nav-link ">ABOUT</a></li>
+            <li class="nav-item"><a href="service.html" class="nav-link ">SERVICE</a></li>
+            <li class="nav-item"><a href="portfolio.html" class="nav-link ">PORTFOLIO</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link ">CONTACT</a></li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -117,6 +124,28 @@
         </div>
       </div>
     </section>
+  </section>
+  <!-- This section is for if user like what they see and want to contact me.   -->
+  <!-- Class in the section tag used for background colour (used that class in css), the margin top and bottom.  -->
+  <section class=" my-5 colour-red">
+    <!-- Using bootstrap grid system. -->
+    <div class="container">
+      <div class="row">
+        <!-- This col is for the heading and writing. When it hits md, it will go to up to line 7.  -->
+        <div class="col-md-7">
+          <!-- Using margin for the top only  -->
+          <h1 class="mt-4">Want To Work With Me</h1>
+          <p> Have a question? Like what you see so far? What to work with me on your next project? Click on the Contact button to see how to contact me.</p>
+        </div>
+        <!-- This col is for the button. When it hits md, it will take up 5 lines after 7.  -->
+        <div class="col-md-5">
+          <div class="d-grid p-md-5 mx-auto mb-5">
+            <button class="btn button" type="button">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
     <section class="colour-black">
       <div class="container">
         <div class="row pt-5 pb-5">
