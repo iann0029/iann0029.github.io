@@ -10,10 +10,15 @@ I have learned by creating my web portfolio is how easy it is to use Bootstrap. 
 
 Finally, include a list of any assets or resources you used that was not your own, including any frameworks, libraries, plugins, fonts, or images.
 Font: 
+Bootstrap: https://getbootstrap.com/
 Cabin form Google Font https://fonts.google.com/specimen/Cabin?preview.text_type=custom
 
 Images: 
-
+https://unsplash.com/photos/cckf4TsHAuw
+https://unsplash.com/photos/2b6K4uy0Hbc
+https://unsplash.com/photos/Jz1aZQewW04
+https://unsplash.com/photos/5QgIuuBxKwM
+https://unsplash.com/photos/zE3jMxLFCIg
 
 Icons: 
 https://iconmonstr.com/photo-camera-4-svg/
