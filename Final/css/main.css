@@ -156,8 +156,8 @@ body{
 label{
     background-color: var(--third);
 }
-/* Adding height and width to the images of the phoyography and graphic design section in porfolio. */
-.photo-graphic img{
-    height: 332px;
-    width: auto;
+/* Adding height and width to the images of graphic design section in porfolio. */
+.graphic{
+    width: 512px;
+    height: auto;
 }
