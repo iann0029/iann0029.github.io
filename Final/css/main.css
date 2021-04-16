@@ -19,6 +19,27 @@ body{
     background-color: var(--main);
     color: var(--font);
     font-family: 'Cabin', sans-serif;
+    font-size: 24px;
+}
+/* Adding the font size to the writiing to the beginning of the homepage. */
+.intro p{
+    font-size: 24px;
+}
+/* Adding the font size to the heading to the beginning of the homepage. */
+.intro h1{
+    font-size: 100px;
+}
+/* Resizing the image of me on the homepage with height and max-width. */
+.photo-me{
+    height: 625px;
+    max-width: auto;
+}
+/* Adding a font size to the h1 on the website */
+h1{
+    font-size: 42px;
+}
+/* Adding a font size to the footer. */
+.site-footer{
     font-size: 14px;
 }
 /* Using this class in HTML to make it easier to for colouring the background black */

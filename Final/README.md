@@ -1,15 +1,16 @@
 description on how you created your web portfolio. This should include what challenges you faced during development and how you overcame those changes. 
-
+I created my website using bootstrap. Using bootstrap was easy to use because as I was adding my content, I would make it responsive using the grid system. The challenge that I faced during the develeopment of the website is that some of the layout design that I had created in my User Experience Design class, I had a hard time coding it. The reason is that some of the content I had laid out originally, I had a hard time with. For example, on my Profolio page, I had Photography and Graphic Design side by side each other. When I was coding it, it did not appear to my satisfaction. I overcame this by adding another carousel to Photogtaphy and showed my Graphic Design work. In the end, it looks even better than how it was originally. 
 
 
 
 
 Talk about what you learned by creating your web portfolio. 
-
+I have learned by creating my web portfolio is how easy it is to use Bootstrap. Bootstrap made the timing of creating the website much quicker than using another method. I like using the grid system. It makes it faster to make the website responsive which saves time. When I was adding my content on my pages and used grid system, I would make it resopnsive at the same time. I like that Bootstrap has build in CSS Framework. Using the components library, it makes it easy to add them on my pages. 
 
 
 Finally, include a list of any assets or resources you used that was not your own, including any frameworks, libraries, plugins, fonts, or images.
-Font: Cabin form Google Font https://fonts.google.com/specimen/Cabin?preview.text_type=custom
+Font: 
+Cabin form Google Font https://fonts.google.com/specimen/Cabin?preview.text_type=custom
 
 Images: 
 
@@ -24,5 +25,4 @@ https://www.flaticon.com/free-icon/graphic-design_1379311?related_id=1379311
 https://iconmonstr.com/phone-1-svg/
 https://iconmonstr.com/email-4-svg/
 
-Logos:
-https://wordpress.org/about/logos/
+
