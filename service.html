@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+     <!-- Adding my own CSS -->
+     <link rel="stylesheet" href="css/main.css">
+     <!-- Adding the Google Font link -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Final - Portfolio</title>
+  </head>
+  <body>
+    <!-- Adding the Navbar.  -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+      <!-- Adding the my logo to the Navbar and when clicking on it, goes back to the homepage. -->
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo.png" class="navbar-logo" alt="photo of my logo">
+        </a>
+        <!-- Adding the toggler button. -->
+        <button class="navbar-toggler toggler-colour" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- This div to make it dropdown when click on the toggler button. -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Using a unorder list for the other pages names on the Navbar. Using the a href for each unorder list to tell it where to go when click on it. -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a href="about.html" class="nav-link ">ABOUT</a></li>
+            <li class="nav-item"><a href="service.html" class="nav-link ">SERVICE</a></li>
+            <li class="nav-item"><a href="portfolio.html" class="nav-link ">PORTFOLIO</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link ">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Adding a banner to the service page -->
+    <section class="banner-service">
+      <h1 class="text-center">SERVICE</h1>
+    </section>
+    <!-- The section tag is used for what services I do -->
+    <section class="mt-5 ">
+      <!-- Using the grid system for the Cards to be responsive. -->
+      <!-- Each of the columns in the section are used with Cards and each on of them have a icon images with the name of the services I do -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="card colour-black text-center p-5 servicecard">
+              <!-- Using span with a class of circle to add the circle with the icons -->
+              <span class="circle"></span>
+              <div class="card-body text-white m-auto">
+                <h2>Web Design</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="card colour-black text-center p-5 servicecard">
+                <!-- Using span with a class of circle-photo to add the circle with the icons -->
+              <span class="circle circle-photo"></span>
+              <div class="card-body text-white m-auto">
+                <h2>Photography</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="card colour-black text-center p-5 servicecard">
+                <!-- Using span with a class of circle-video to add the circle with the icons -->
+              <span class="circle circle-video"></span>
+              <div class="card-body text-white m-auto">
+                <h2>Videography</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="card colour-black text-center p-5 servicecard">
+                <!-- Using span with a class of circle to add the circle-graphic with the icons -->
+              <span class="circle circle-graphic"></span>
+              <div class="card-body text-white m-auto">
+                <h2>Graphic Design</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="card colour-black text-center p-5 servicecard">
+                <!-- Using span with a class of circle to add the circle-UI with the icons -->
+              <span class="circle circle-UI"></span>
+              <div class="card-body text-white m-auto">
+                <h2>UI/UX Design</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="card colour-black text-center p-5 servicecard">
+                <!-- Using span with a class of circle-code to add the circle with the icons -->
+              <span class="circle circle-code"></span>
+              <div class="card-body text-white m-auto">
+                <h2>Programming</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Using the section tag for the software section on the page  -->
+    <section class="colour-black mb-5">
+      <!-- Using the grid system to layout this section. -->
+      <div class="container ">
+        <div class="row">
+          <div class="col">
+            <h1 class="mt-5">Software</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>Here are the softwares that I have been working with. I am willing to learn different softwares.</p>
+          </div>
+        </div>
+        <!-- Using the div tag for the name of the software to be in a List Group -->
+        <div class="row">
+          <div class="col">
+            <ul class="list-group mb-5 list-group-flush">
+              <li class="list-group-item">Wordpress</li>
+              <li class="list-group-item">Drupal</li>
+              <li class="list-group-item">Adobe Products</li>
+              <li class="list-group-item">Shopify</li>
+              <li class="list-group-item">Visual Studio Code</li>
+              <li class="list-group-item">Github</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- This section is for if user like what they see and want to contact me.   -->
+  <!-- Class in the section tag used for background colour (used that class in css), the margin top and bottom.  -->
+  <section class=" my-5 colour-red">
+    <!-- Using bootstrap grid system. -->
+    <div class="container">
+      <div class="row">
+        <!-- This col is for the heading and writing. When it hits md, it will go to up to line 7.  -->
+        <div class="col-md-7">
+          <!-- Using margin for the top only  -->
+          <h1 class="mt-4">Want To Work With Me</h1>
+          <p> Have a question? Like what you see so far? What to work with me on your next project? Click on the Contact button to see how to contact me.</p>
+        </div>
+        <!-- This col is for the button. When it hits md, it will take up 5 lines after 7.  -->
+        <div class="col-md-5">
+          <div class="d-grid p-md-5 mx-auto mb-5">
+            <button class="btn button" type="button">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- This section is the footer -->
+  <section class="colour-black site-footer">
+    <!-- Adding a grid system -->
+    <div class="container">
+      <div class="row pt-5 pb-5">
+        <div class="col-md-4">
+          <!-- Adding the images of my logo and styling it using the class -->
+          <img src="images/logo.png" alt="photo of the logo" class="bg-white p-2">
+          <!-- Adding the copyright -->
+          <div>
+            &copy; Pietro Ianni 2021
+          </div>
+        </div>
+        <!-- The div tag is the quick contact info -->
+        <div class="col-md-3 text-white mt-5 mt-md-0">
+          <h5>CONTACT US</h5>
+          <p>(613) 555-5555</p>
+          <p>pietroi14@rogers.com</p>
+        </div>
+        <!-- This div tag is the soical media  -->
+        <div class="col-md-5 text-white mt-5 mt-md-0">
+          <h5>Social Media</h5>
+          <!-- Using the class float-start to make it all lineup on the same row  -->
+          <img src="icons/iconmonstrinstagram.png" style="width: 16px;" class="float-start me-2 " alt="photo of soical media icon">
+          <p class="float-start">@pietroianni14</p>
+          <img src="icons/iconmonstr-twitter-3-240.png" style="width: 16px;" class="float-start mx-2 " alt="photo of soical media icon">
+          <p class="float-start">@pietroianni</p>
+          <img src="icons/iconmonstrfacebook.png" style="width: 16px;" class="float-start mx-2 " alt="photo of soical media icon">
+          <p class="float-start">Pietro Ianni</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  </body>
+</html>

@@ -1,0 +1,184 @@
+
+
+
+/* Using the img tag to have every images have a max-width of 100% as well as the height. Using the margin to have no margin on every image. */
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* Using :root for my color thoughout the pages. This make it easy for me if I have to change  any of the color in the future.  */
+:root{
+   --main: #2D3D50;
+   --font: #FFFEFB;
+   --second: #181919;
+   --button: #858C84;
+   --third: #972718;
+}
+/* In the body tag, I set the background color, colour, font, and font size that is being use thoughout the page. */
+body{
+    background-color: var(--main);
+    color: var(--font);
+    font-family: 'Cabin', sans-serif;
+    font-size: 24px;
+}
+/* Adding the font size to the writiing to the beginning of the homepage. */
+.intro p{
+    font-size: 24px;
+}
+/* Adding the font size to the heading to the beginning of the homepage. */
+.intro h1{
+    font-size: 100px;
+}
+/* Resizing the image of me on the homepage with height and max-width. */
+.photo-me{
+    height: 625px;
+    width: auto;
+}
+/* Adding a font size to the h1 on the website */
+h1{
+    font-size: 42px;
+}
+/* Adding a font size to the footer. */
+.site-footer{
+    font-size: 14px;
+}
+/* Using this class in HTML to make it easier to for colouring the background black */
+.colour-black{
+    background-color: var(--second);
+}
+/* This class is used for the background colour to be red */
+.colour-red{
+    background-color: var(--third);
+}
+/* Change the background colour of the navbar. Using !important to over write it so that it will appear. */
+.navbar{
+    background-color: var(--second) !important; 
+}
+
+/* Change the colour of the navbar writiing. Using !important to over write it so that it will appear. */
+.navbar-nav li a{
+    color: var(--font) !important;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+/* Styling the logo on the navagtion bar by adding a background colour, padding, width, and height of the image. */
+.navbar-logo{
+    background-color: var(--font);
+    padding: 10px;
+    max-width: 187px;
+    height: auto;
+}
+
+
+/* Using the banners classes to add an images in the background  */
+.banner-about{
+    background-image: url(../images/andrew-neel-cckf4TsHAuw-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 323px;
+}
+
+.banner-service{
+    background-image: url(../images/dj-watson-Jz1aZQewW04-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 323px;
+}
+.banner-portfolio{
+    background-image: url(../images/bailey-mahon-2b6K4uy0Hbc-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 323px;
+}
+.banner-contact{
+    background-image: url(../images/headway-5QgIuuBxKwM-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 323px;
+}
+/* Using the banners class for each banners h1 to change the font size and padding */
+.banner-about h1, .banner-contact h1,
+.banner-portfolio h1, .banner-service h1{
+    font-size: 60px;
+    padding: 1.7em;
+}
+/* Changing the font size of the heading on the homepage headings  */
+.info{
+    font-size: 14px;
+}
+/* Styling the button in all of the pages by background, colour, height, width, font size */
+.button{
+    background-color: var(--button);
+    color: var(--font);
+    height: 67px;
+    width: 260px;
+    font-size: 20px;
+}
+/* Styling the button in to form. It is the same as the button but the only change is the background colour */
+.button-form{
+    background-color: var(--third);
+    color: var(--font);
+    height: 67px;
+    width: 260px;
+    font-size: 20px;
+}
+/* Using this class for the sizing of the icon images in the contact */
+.icon{
+    max-width: 67px;
+    height: 62px;
+}
+/* Using this class for the cards in the servixce page and homepage. This is styling the cards height  */
+.servicecard{
+    height: 311.23px;
+}
+/* Styling the heading on the cards that is being used on the service page and homepage  */
+.servicecard h2{
+    font-size: 24px;
+}
+/* Adding a circle to the cards and adding the icons as a background image and styling it.*/
+.circle{
+    display: block;
+    margin: 0 auto;
+    background: var(--font);
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    background-image: url(../icons/graphic-design.png);
+    background-size: 68px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Adding a different background image */
+.circle-photo{
+    background-image: url(../icons/iconmonstr-photo-camera-4.svg);
+}
+/* Adding a different background image */
+.circle-video{
+    background-image: url(../icons/iconmonstr-video-camera-1.svg);
+}
+/* Adding a different background image */
+.circle-graphic{
+    background-image: url(../icons/vector.png);
+}
+/* Adding a different background image */
+.circle-UI{
+    background-image: url(../icons/web-design.png);
+}
+/* Adding a different background image */
+.circle-code{
+    background-image: url(../icons/iconmonstr-code-2.svg);
+}
+/* Adding a background colour to the labels in the form on the contact page */
+label{
+    background-color: var(--third);
+}
+/* Adding height and width to the images of graphic design section in porfolio. */
+.graphic{
+    width: 512px;
+    height: auto;
+}
