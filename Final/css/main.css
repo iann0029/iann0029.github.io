@@ -32,7 +32,7 @@ body{
 /* Resizing the image of me on the homepage with height and max-width. */
 .photo-me{
     height: 625px;
-    max-width: auto;
+    width: auto;
 }
 /* Adding a font size to the h1 on the website */
 h1{
